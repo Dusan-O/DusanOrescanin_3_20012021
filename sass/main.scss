@@ -4,9 +4,11 @@ $tertClr: #99E2D0;
 $quartClr: #fff;
 $quintClr: #383838;
 $sixtClr: #f3f3f3;
-$borderRad: 20px;
+$septClr: #F6F6F6;
+$borderRad: 30px;
 $borderRadius: 10px;
 $border: 1px solid black;
+$fontSizeMain: 1.8em;
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -20,24 +22,53 @@ $border: 1px solid black;
     margin: 0;
         &__logo{
         font-family: 'Shrikhand', cursive;
-        font-size: 1.8em;
+        font-size: $fontSizeMain;
         text-align: center;
         color: $quintClr;
         font-weight: lighter;
         }
+        
     }
 
-.location{
-    width: 100%;
-    height: 50px;
-    background-color: $sixtClr;
-    padding: 10px;
-    z-index: 1;
+.main{
     display: flex;
-    justify-content: space-around;
-        &__texte{
-            font-weight: bold;
+    flex-direction: column;
+    .location{
+        width: 100%;
+        height: 50px;
+        background-color: $sixtClr;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            &__texte{
+                font-weight: bold;
+            }
+    }
+    .description{
+        width: 100%;
+        height: auto;
+        background-color: $septClr ;
+        border: 0;
+        text-align: center;
+        padding-bottom: 20px;
+
+        &__titre{
+            font-size: $fontSizeMain;
         }
+        &__boutton{
+            padding: 10px;
+            input{
+                border-radius: $borderRad;
+                padding: 15px;
+                background-color: $primClr;
+                box-shadow: 0px 5px 5px 0px rgba(128, 128, 128, 0.75);
+                color: $quartClr;
+                font-size: 1.3em;
+
+            }
+        }
+    }
 }
 
 footer{
