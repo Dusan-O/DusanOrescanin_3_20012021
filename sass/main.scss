@@ -3,11 +3,33 @@ $secndClr: #FF79DA;
 $tertClr: #99E2D0;
 $quartClr: #fff;
 $quintClr: #383838;
+$sixtClr: #E9E9E9;
 $borderRad: 20px;
 $borderRadius: 10px;
+$border: 1px solid black;
 
-
-
+header{
+    text-align: center;
+    .titre{
+        width: auto;
+        height: 50px;
+        border-bottom: $border;
+        
+    }
+    h2{
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.8em;
+    color: $quintClr;
+    font-weight: lighter;
+    padding-bottom: 15px;
+}
+    .location{
+        width: 100%;
+        height: auto;
+        background-color: $sixtClr;
+        padding: 10px;
+    }
+}
 footer{
     background-color: $quintClr;
     width: auto;
@@ -23,6 +45,7 @@ footer{
             color: $quartClr;
             font-weight: lighter;
         }
+        
     }
     a{
         color: $quartClr;
