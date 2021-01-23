@@ -8,13 +8,15 @@ $borderRad: 20px;
 $borderRadius: 10px;
 $border: 1px solid black;
 
+*{
+    font-family: 'Roboto', sans-serif;
+}
 header{
     text-align: center;
     .titre{
         width: auto;
         height: 50px;
-        border-bottom: $border;
-        
+        border-bottom: $border outset;
     }
     h2{
     font-family: 'Shrikhand', cursive;
@@ -22,12 +24,16 @@ header{
     color: $quintClr;
     font-weight: lighter;
     padding-bottom: 15px;
+    
 }
     .location{
         width: 100%;
         height: auto;
         background-color: $sixtClr;
         padding: 10px;
+        p{
+            font-weight: bold;
+        }
     }
 }
 footer{
@@ -37,7 +43,6 @@ footer{
     padding: 5px;
     ul{
         list-style-type: none;
-        font-family: 'Roboto', sans-serif;
         margin-left: 150px;
         h2{
             font-family: 'Shrikhand', cursive;
