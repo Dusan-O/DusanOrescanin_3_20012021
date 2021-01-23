@@ -3,7 +3,7 @@ $secndClr: #FF79DA;
 $tertClr: #99E2D0;
 $quartClr: #fff;
 $quintClr: #383838;
-$sixtClr: #E9E9E9;
+$sixtClr: #f3f3f3;
 $borderRad: 20px;
 $borderRadius: 10px;
 $border: 1px solid black;
@@ -11,31 +11,34 @@ $border: 1px solid black;
 *{
     font-family: 'Roboto', sans-serif;
 }
-header{
-    text-align: center;
-    .titre{
-        width: auto;
-        height: 50px;
-        border-bottom: $border outset;
-    }
-    h2{
-    font-family: 'Shrikhand', cursive;
-    font-size: 1.8em;
-    color: $quintClr;
-    font-weight: lighter;
-    padding-bottom: 15px;
-    
+
+.header{
+    padding: 1rem;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,.25);
+    position: relative;
+    z-index: 1000;
+    margin: 0;
+        &__logo{
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.8em;
+        text-align: center;
+        color: $quintClr;
+        font-weight: lighter;
 }
-    .location{
-        width: 100%;
-        height: auto;
-        background-color: $sixtClr;
-        padding: 10px;
-        p{
+
+.location{
+    width: 100%;
+    height: 50px;
+    background-color: $sixtClr;
+    padding: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+        &__texte{
             font-weight: bold;
         }
-    }
 }
+
 footer{
     background-color: $quintClr;
     width: auto;
