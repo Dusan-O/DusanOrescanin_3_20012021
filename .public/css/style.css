@@ -9,9 +9,11 @@ footer ul {
   font-family: "Roboto", sans-serif;
   margin-left: 150px;
 }
-footer ul p {
+footer ul h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1.3em;
+  color: #fff;
+  font-weight: lighter;
 }
 footer a {
   color: #fff;

@@ -17,9 +17,11 @@ footer{
         list-style-type: none;
         font-family: 'Roboto', sans-serif;
         margin-left: 150px;
-        p{
+        h2{
             font-family: 'Shrikhand', cursive;
             font-size: 1.3em;
+            color: $quartClr;
+            font-weight: lighter;
         }
     }
     a{
