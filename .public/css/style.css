@@ -1,7 +1,21 @@
 footer {
   background-color: #383838;
-  width: 100%;
+  width: auto;
   height: auto;
+  padding: 5px;
+}
+footer ul {
+  list-style-type: none;
+  font-family: "Roboto", sans-serif;
+  margin-left: 150px;
+}
+footer ul p {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.3em;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

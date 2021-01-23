@@ -10,6 +10,21 @@ $borderRadius: 10px;
 
 footer{
     background-color: $quintClr;
-    width: 100%;
+    width: auto;
     height: auto;
+    padding: 5px;
+    ul{
+        list-style-type: none;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 150px;
+        p{
+            font-family: 'Shrikhand', cursive;
+            font-size: 1.3em;
+        }
+    }
+    a{
+        color: $quartClr;
+        text-decoration: none;
+    }
+
 }
