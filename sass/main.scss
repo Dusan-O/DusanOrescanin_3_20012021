@@ -9,6 +9,7 @@ $borderRad: 30px;
 $borderRadius: 10px;
 $border: 1px solid black;
 $fontSizeMain: 1.8em;
+$padding: 15px;
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -33,6 +34,7 @@ $fontSizeMain: 1.8em;
 .main{
     display: flex;
     flex-direction: column;
+    width: 100%;
     .location{
         width: 100%;
         height: 50px;
@@ -60,7 +62,7 @@ $fontSizeMain: 1.8em;
             padding: 10px;
             input{
                 border-radius: $borderRad;
-                padding: 15px;
+                padding: $padding;
                 background-color: $primClr;
                 box-shadow: 0px 5px 5px 0px rgba(128, 128, 128, 0.75);
                 color: $quartClr;
@@ -68,6 +70,28 @@ $fontSizeMain: 1.8em;
 
             }
         }
+    }
+    .navBar{
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+      
+            li{
+                border: $border;
+                list-style-type: none;
+                border-radius: $borderRad;
+                padding: $padding;
+                font-weight: bold;
+                font-size: 1.1em;
+                background-color: $septClr;
+                &:hover{
+                    background-color: #FF79DA;
+                }
+            }
+        }
+        
+        
     }
 }
 

@@ -20,6 +20,7 @@
 .main {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .main .location {
   width: 100%;
@@ -54,6 +55,23 @@
   box-shadow: 0px 5px 5px 0px rgba(128, 128, 128, 0.75);
   color: #fff;
   font-size: 1.3em;
+}
+.main .navBar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.main .navBar ul li {
+  border: 1px solid black;
+  list-style-type: none;
+  border-radius: 30px;
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: #F6F6F6;
+}
+.main .navBar ul li:hover {
+  background-color: #FF79DA;
 }
 
 footer {
