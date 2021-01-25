@@ -88,7 +88,9 @@
 .mainPage__imgCard {
   width: 550px;
   height: 300px;
-  border: 1px solid black;
+  border: 0px solid black;
+  border-radius: 10px;
+  overflow: hidden;
   margin-bottom: 30px;
   margin: 20px;
 }
