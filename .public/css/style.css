@@ -13,7 +13,7 @@
   font-family: "Shrikhand", cursive;
   font-size: 1.8em;
   text-align: center;
-  color: #383838;
+  color: #f6f6f6;
   font-weight: lighter;
 }
 
@@ -21,11 +21,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  border: 20%;
 }
 .main .location {
   width: 100%;
   height: 50px;
-  background-color: #f3f3f3;
+  background-color: #eaeaea;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -37,7 +38,7 @@
 .main .description {
   width: 100%;
   height: auto;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border: 0;
   text-align: center;
   padding-bottom: 20px;
@@ -51,9 +52,9 @@
 .main .description__boutton input {
   border-radius: 30px;
   padding: 15px;
-  background-color: #9356DC;
-  box-shadow: 0px 5px 5px 0px rgba(128, 128, 128, 0.75);
-  color: #fff;
+  background-color: #de6eda;
+  box-shadow: 0px 5px 5px 0px #de6eda;
+  color: #f3f3f3;
   font-size: 1.3em;
 }
 .main .navBar ul {
@@ -66,16 +67,32 @@
   list-style-type: none;
   border-radius: 30px;
   padding: 15px;
-  font-weight: bold;
-  font-size: 1.1em;
-  background-color: #F6F6F6;
+  font-size: 1.2em;
+  background-color: #f6f6f6;
 }
 .main .navBar ul li:hover {
-  background-color: #FF79DA;
+  background-color: #f5edff;
+}
+
+.mainPage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 15%;
+}
+.mainPage__imgCard {
+  width: 500px;
+  height: 300px;
+  border: 1px solid black;
+  margin-bottom: 30px;
+  margin: 20px;
 }
 
 footer {
-  background-color: #383838;
+  background-color: #353535;
   width: auto;
   height: auto;
   padding: 5px;
@@ -87,11 +104,11 @@ footer ul {
 footer ul h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1.3em;
-  color: #fff;
+  color: #f3f3f3;
   font-weight: lighter;
 }
 footer a {
-  color: #fff;
+  color: #f3f3f3;
   text-decoration: none;
 }
 

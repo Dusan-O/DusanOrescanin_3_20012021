@@ -1,15 +1,19 @@
 $primClr: #9356DC;
 $secndClr: #FF79DA;
 $tertClr: #99E2D0;
-$quartClr: #fff;
-$quintClr: #383838;
-$sixtClr: #f3f3f3;
-$septClr: #F6F6F6;
+$quartClr: #f3f3f3;
+$quintClr: #f6f6f6;
+$sixtClr: #f5edff;
+$seventhClr: #353535;
+$eightClr: #eaeaea;
+$ninthClr: #de6eda;
 $borderRad: 30px;
 $borderRadius: 10px;
 $border: 1px solid black;
 $fontSizeMain: 1.8em;
 $padding: 15px;
+$imgRestaurant: (width: 100px, height: 50px);
+
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -28,17 +32,18 @@ $padding: 15px;
         color: $quintClr;
         font-weight: lighter;
         }
-        
     }
 
 .main{
     display: flex;
     flex-direction: column;
     width: 100%;
+    border: 20%;
+
     .location{
         width: 100%;
         height: 50px;
-        background-color: $sixtClr;
+        background-color: $eightClr;
         z-index: 1;
         display: flex;
         justify-content: center;
@@ -50,7 +55,7 @@ $padding: 15px;
     .description{
         width: 100%;
         height: auto;
-        background-color: $septClr ;
+        background-color: $quintClr;
         border: 0;
         text-align: center;
         padding-bottom: 20px;
@@ -63,11 +68,10 @@ $padding: 15px;
             input{
                 border-radius: $borderRad;
                 padding: $padding;
-                background-color: $primClr;
-                box-shadow: 0px 5px 5px 0px rgba(128, 128, 128, 0.75);
+                background-color: $ninthClr;
+                box-shadow: 0px 5px 5px 0px $ninthClr;
                 color: $quartClr;
                 font-size: 1.3em;
-
             }
         }
     }
@@ -82,21 +86,38 @@ $padding: 15px;
                 list-style-type: none;
                 border-radius: $borderRad;
                 padding: $padding;
-                font-weight: bold;
-                font-size: 1.1em;
-                background-color: $septClr;
+               
+                font-size: 1.2em;
+                background-color: $quintClr;
                 &:hover{
-                    background-color: #FF79DA;
+                    background-color: $sixtClr;
                 }
             }
         }
         
-        
+    }
+}
+
+.mainPage{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin:0 15%;
+    &__imgCard{
+        width: 500px;
+        height: 300px;
+        border: 1px solid black;
+        margin-bottom: 30px;
+        margin: 20px;
+
     }
 }
 
 footer{
-    background-color: $quintClr;
+    background-color: $seventhClr;
     width: auto;
     height: auto;
     padding: 5px;
@@ -107,7 +128,7 @@ footer{
             font-family: 'Shrikhand', cursive;
             font-size: 1.3em;
             color: $quartClr;
-            font-weight: lighter;
+            font-weight: lighter; 
         }
         
     }
