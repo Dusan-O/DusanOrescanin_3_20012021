@@ -11,7 +11,7 @@
 }
 .header__logo {
   font-family: "Shrikhand", cursive;
-  font-size: 1.9em;
+  font-size: 2.1em;
   text-align: center;
   color: #353535;
   font-weight: lighter;
@@ -44,7 +44,7 @@
   padding-bottom: 20px;
 }
 .main .description__titre {
-  font-size: 1.9em;
+  font-size: 2.1em;
 }
 .main .description__boutton {
   padding: 10px;
@@ -110,6 +110,16 @@
   background: #fff;
   border: 0px solid;
   padding-top: 0;
+}
+
+.banniereRestaurant {
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+.banniereRestaurant img {
+  max-width: 100%;
+  height: auto;
 }
 
 footer {

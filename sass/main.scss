@@ -10,7 +10,7 @@ $ninthClr: #de6eda;
 $borderRad: 30px;
 $borderRadius: 10px;
 $border: 1px solid black;
-$fontSizeMain: 1.9em;
+$fontSizeMain: 2.1em;
 $padding: 15px;
 $imgRestaurant: (width: 100px, height: 50px);
 
@@ -138,6 +138,16 @@ $imgRestaurant: (width: 100px, height: 50px);
     }
 
    
+}
+
+.banniereRestaurant{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 footer{
