@@ -82,32 +82,34 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  margin: 0 15%;
+  width: 100%;
+  background-color: #f6f6f6;
 }
 .mainPage__imgCard {
-  width: 550px;
+  width: 700px;
   height: 300px;
   border: 0px solid black;
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 30px;
-  margin: 20px;
+  margin: 40px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 .mainPage__imgCard img {
   width: 100%;
-  max-height: 210px;
+  height: 230px;
   overflow: hidden;
   object-fit: cover;
+  padding-bottom: 0;
 }
 .mainPage__imgCard--txt {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background: #fff;
   border: 0px solid;
-  border-left: 50px;
+  padding-top: 0;
 }
 
 footer {

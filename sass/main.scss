@@ -106,30 +106,33 @@ $imgRestaurant: (width: 100px, height: 50px);
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    margin:0 15%;
+    width: 100%;
+    background-color: $quintClr;
+
     &__imgCard {
-        width: 550px;
+        width: 700px;
         height: 300px;
         border: 0px solid black; // enlever 1px 
         border-radius: $borderRadius;
         overflow: hidden;
         margin-bottom: 30px;
-        margin: 20px; 
+        margin: 40px; 
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         img{
             width: 100%;
-            max-height: 210px;
+            height: 230px;
             overflow: hidden;
             object-fit:cover;
+            padding-bottom: 0;
         }
         &--txt{
             width: 100%;
-            height: 80px;
+            height: 100px;
             background: #fff;
             border: 0px solid; // enlever bordures
-            border-left: 50px;
+            padding-top: 0;
         }
         
     }
