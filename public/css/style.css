@@ -57,18 +57,25 @@
   color: #f3f3f3;
   font-size: 1.3em;
 }
+.main .navBar__fonctionnement {
+  font-size: 1.5em;
+  font-weight: bold;
+  border: 1px solid black;
+  margin-top: 20px;
+}
 .main .navBar ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   width: 70%;
-  margin: 0 15%;
+  margin: 0 12%;
 }
 .main .navBar ul li {
   border: 1px solid black;
   list-style-type: none;
   border-radius: 30px;
   padding: 15px;
+  margin: 20px 0;
   font-size: 1.2em;
   background-color: #f6f6f6;
 }
@@ -109,8 +116,25 @@
   background: #fff;
   border: 0px solid;
 }
+.mainPage__imgCard--heart {
+  display: flex;
+  justify-content: space-between;
+}
+.mainPage__imgCard--heart .far {
+  font-size: 2em;
+  padding-right: 10px;
+}
+.mainPage__imgCard--heart .far:active {
+  color: red;
+}
 .mainPage__imgCard h3 {
   margin-top: 0;
+  padding-left: 10px;
+  font-size: 1.4em;
+}
+.mainPage__imgCard p {
+  padding-left: 10px;
+  font-size: 1.2em;
 }
 
 .menu {
