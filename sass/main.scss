@@ -67,8 +67,7 @@ $imgRestaurant: (width: 100px, height: 50px);
                 padding: $padding;
                 background-color: $ninthClr;
                 box-shadow: 0px 5px 5px 0px $ninthClr;
-                color: $quartClr;
-                font-size: 1.3em;
+                background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);                font-size: 1.3em;
                 padding: 20px;
             }
         }
@@ -144,8 +143,7 @@ $imgRestaurant: (width: 100px, height: 50px);
             background: #fff;
             p{
                 padding-left: 10px;
-                margin-bottom: 5px;
-                font-size: 1.2em;
+                font-size: 1em;
             }
         }
         &--heart{
