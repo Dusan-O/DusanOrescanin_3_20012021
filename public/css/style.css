@@ -53,8 +53,9 @@
   padding: 15px;
   background-color: #de6eda;
   box-shadow: 0px 5px 5px 0px #de6eda;
-  background-image: radial-gradient(circle at 50% -20.71%, #ade5ff 0, #7dcefb 25%, #3cb5f2 50%, #009ce9 75%, #0085e0 100%);
+  background: linear-gradient(180deg, #ee76cf 0%, #df71cf 50%, #9058d0 100%);
   font-size: 1.3em;
+  color: #fff;
   padding: 20px;
 }
 .main .navBar__fonctionnement {
