@@ -9,6 +9,9 @@
   z-index: 1000;
   margin: 0;
 }
+.header__arrow {
+  font-size: 2em;
+}
 .header__logo {
   font-family: "Shrikhand", cursive;
   font-size: 3em;
@@ -52,7 +55,7 @@
   border-radius: 30px;
   padding: 15px;
   background-color: #de6eda;
-  box-shadow: 0px 5px 5px 0px #de6eda;
+  box-shadow: 5px 5px 5px 0px #de6eda;
   background: linear-gradient(180deg, #ee76cf 0%, #df71cf 50%, #9058d0 100%);
   font-size: 1.3em;
   color: #fff;
@@ -63,6 +66,9 @@
   font-weight: bold;
   position: relative;
   top: 55px;
+}
+.main .navBar__fonctionnement--numero {
+  border: 1px solid;
 }
 .main .navBar ul {
   display: flex;
@@ -77,7 +83,7 @@
   padding: 20px 150px 20px 20px;
   margin: 20px 0;
   font-size: 1em;
-  box-shadow: 0px 5px 5px 0px #eaeaea;
+  box-shadow: 5px 5px 5px 0px #eaeaea;
   background-color: #f6f6f6;
 }
 .main .navBar ul li:hover {
@@ -85,6 +91,15 @@
 }
 .main .navBar ul li:hover .fas {
   color: #9356DC;
+}
+.main .navBar ul li .numero {
+  padding: 1px 6px;
+  border-radius: 45px 45px;
+  margin-left: 1px;
+  background-color: #9356DC;
+  color: #fff;
+  position: relative;
+  right: 30px;
 }
 
 .mainPage {
