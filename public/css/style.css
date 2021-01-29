@@ -27,7 +27,7 @@
   border: 20%;
 }
 .main .location {
-  width: 100%;
+  width: auto;
   height: 50px;
   padding: 10px;
   background-color: #eaeaea;
@@ -67,7 +67,7 @@
 .main .navBar {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 20px;
 }
 .main .navBar__fonctionnement {
   font-size: 1.5em;
@@ -113,9 +113,9 @@
 .mainPage {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: auto;
   background-color: #f6f6f6;
-  padding: 10px;
+  padding: 20px;
 }
 .mainPage__restaurants {
   font-size: 1.5em;
