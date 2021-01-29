@@ -132,65 +132,84 @@ $imgRestaurant: (width: 100px, height: 50px);
 
 .mainPage{
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
     background-color: $quintClr;
-
-    &__imgCard {
-        width: 700px;
-        height: 300px;
-        border-radius: $borderRadius;
-        overflow: hidden;
-        margin-bottom: 30px;
-        margin: 40px; 
+    padding: 10px;
+    &__restaurants
+    {
+        font-size: 1.5em;
+            font-weight: bold;
+            position: relative;
+            top: 5px;
+            left: 170px;
+    }
+    .mainPages{
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-            &:hover{
-            transition: 1s;
-            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        &__restaurants{
+            font-size: 1.5em;
+                font-weight: bold;
+                position: relative;
+                bottom: 175px;
+                left: 170px;
         }
-        img{
-            width: 100%;
-            height: 230px;
+        &__imgCard {
+            width: 700px;
+            height: 300px;
+            border-radius: $borderRadius;
             overflow: hidden;
-            object-fit:cover;
-        }
-        &--txt{
-            width: 100%;
-            height: 120px;
-            background: #fff;
-            p{
-                padding-left: 10px;
-                font-size: 1em;
-            }
-        }
-        &--heart{
+            margin-bottom: 30px;
+            margin: 40px; 
             display: flex;
-            justify-content: space-between;
-            .far{
-                font-size: 2em ;
-                padding-right: 10px;
-                &:active{
-                    color: red;
+            flex-direction: column;
+            justify-content: space-around;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                &:hover{
+                transition: 1s;
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
+            img{
+                width: 100%;
+                height: 230px;
+                overflow: hidden;
+                object-fit:cover;
+            }
+            &--txt{
+                width: 100%;
+                height: 120px;
+                background: #fff;
+                p{
+                    padding-left: 10px;
+                    font-size: 1em;
                 }
             }
-            h3{
-                margin-top: 0;
-                padding-top: 5px;
-                padding-left: 10px;
-                font-size: 1.4em;
+            &--heart{
+                display: flex;
+                justify-content: space-between;
+                .far{
+                    font-size: 2em ;
+                    padding-right: 10px;
+                    &:active{
+                        color: red;
+                    }
+                }
+                h3{
+                    margin-top: 0;
+                    padding-top: 5px;
+                    padding-left: 10px;
+                    font-size: 1.4em;
+                }
+
             }
-
+            
         }
-        
-    }
 
-   
+    
+    }
 }
 
 .menu{
