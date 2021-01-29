@@ -209,9 +209,10 @@
   background-color: #f6f6f6;
 }
 .menu .menu__restaurant h1 {
-  text-align: center;
+  text-align: left;
   font-size: 1.5em;
   font-family: "Shrikhand", cursive;
+  padding-left: 20px;
 }
 .menu .menu__restaurant .choice {
   background-color: #f6f6f6;
@@ -243,6 +244,21 @@
 .menu .menu__restaurant .choice__entree--detail h6 {
   font-weight: bold;
   line-height: 1px;
+}
+.menu .menu__restaurant .commande {
+  padding: 20px;
+  text-align: center;
+}
+.menu .menu__restaurant .commande input {
+  border-radius: 30px;
+  padding: 15px;
+  background-color: #de6eda;
+  box-shadow: 5px 5px 5px 0px #de6eda;
+  background: linear-gradient(180deg, #ee76cf 0%, #df71cf 50%, #9058d0 100%);
+  font-size: 1.3em;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 footer {
