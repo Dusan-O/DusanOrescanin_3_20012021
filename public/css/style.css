@@ -70,13 +70,9 @@
   padding: 10px;
 }
 .main .navBar__fonctionnement {
-  border: 1px black solid;
   font-size: 1.5em;
   font-weight: bold;
-  position: relative;
-  top: 5px;
-  left: 170px;
-  border: 0px;
+  padding-left: 9%;
 }
 .main .navBar__fonctionnement--numero {
   border: 1px solid black;
@@ -124,11 +120,7 @@
 .mainPage__restaurants {
   font-size: 1.5em;
   font-weight: bold;
-  position: relative;
-  top: 5px;
-  left: 170px;
-  border: 1px black solid;
-  border: 0px;
+  padding-left: 9%;
 }
 .mainPage .mainPages {
   display: flex;
