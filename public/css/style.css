@@ -203,7 +203,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -50px;
+  top: -100px;
 }
 .menu .menu__restaurant h1 {
   text-align: center;
@@ -211,16 +211,31 @@
 }
 .menu .menu__restaurant .choice {
   display: flex;
+  justify-content: space-between;
 }
-.menu .menu__restaurant .choice ul {
-  font-size: 1.5em;
+.menu .menu__restaurant .choice__entree h5 {
+  font-size: 2em;
+  padding-left: 20px;
 }
-.menu .menu__restaurant .choice ul li {
+.menu .menu__restaurant .choice__entree--detail {
   border: 1px solid black;
-  padding: 25px;
-  margin-bottom: 20px;
-  list-style-type: none;
-  border-radius: 30px;
+  border-radius: 45px 45px;
+  padding-right: 190px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+.menu .menu__restaurant .choice__entree--detail h3 {
+  font-weight: bold;
+  font-size: 1.7em;
+  line-height: 1px;
+}
+.menu .menu__restaurant .choice__entree--detail p {
+  font-size: 1.4em;
+  line-height: 1px;
+}
+.menu .menu__restaurant .choice__entree--detail h6 {
+  font-weight: bold;
+  line-height: 1px;
 }
 
 footer {
