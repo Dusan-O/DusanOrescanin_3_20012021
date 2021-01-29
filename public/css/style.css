@@ -11,6 +11,7 @@
 }
 .header__arrow {
   font-size: 2em;
+  color: #353535;
 }
 .header__logo {
   font-family: "Shrikhand", cursive;
@@ -194,24 +195,27 @@
 .menu .banniereRestaurant img {
   max-width: 100%;
 }
-.menu h1 {
-  text-align: center;
-  font-size: 2em;
-}
 .menu .menu__restaurant {
-  border-radius: 9% 9% 0 0;
+  border-radius: 6% 6% 0 0;
   background-color: #fff;
-  border: 1px solid black;
   width: 100%;
   z-index: 1;
   display: flex;
+  flex-direction: column;
   position: relative;
   top: -50px;
 }
-.menu .menu__restaurant ul {
+.menu .menu__restaurant h1 {
+  text-align: center;
+  font-size: 2em;
+}
+.menu .menu__restaurant .choice {
+  display: flex;
+}
+.menu .menu__restaurant .choice ul {
   font-size: 1.5em;
 }
-.menu .menu__restaurant ul li {
+.menu .menu__restaurant .choice ul li {
   border: 1px solid black;
   padding: 25px;
   margin-bottom: 20px;
