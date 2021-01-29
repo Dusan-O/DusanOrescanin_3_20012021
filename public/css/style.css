@@ -199,18 +199,22 @@
   border-radius: 35px 35px 0 0;
   background-color: #fff;
   width: 80%;
+  height: auto;
   margin: 10%;
   z-index: 1;
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -400px;
+  top: -300px;
+  background-color: #f6f6f6;
 }
 .menu .menu__restaurant h1 {
   text-align: center;
   font-size: 1.5em;
+  font-family: "Shrikhand", cursive;
 }
 .menu .menu__restaurant .choice {
+  background-color: #f6f6f6;
   display: flex;
   justify-content: space-around;
 }
@@ -219,11 +223,13 @@
   padding-left: 20px;
 }
 .menu .menu__restaurant .choice__entree--detail {
-  border: 1px solid black;
+  border: 1px solid #fff;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background-color: #fff;
   border-radius: 25px 25px;
   padding-right: 190px;
   padding-left: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .menu .menu__restaurant .choice__entree--detail h3 {
   font-weight: bold;

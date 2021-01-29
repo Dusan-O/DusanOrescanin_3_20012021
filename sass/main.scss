@@ -221,38 +221,40 @@ $imgRestaurant: (width: 100px, height: 50px);
         border-radius: 35px 35px 0 0;
         background-color: #fff;
         width: 80%;
+        height: auto;
         margin: 10%;
         z-index: 1;
         display: flex;
         flex-direction: column;
         position: relative;
-        top: -400px;
+        top: -300px;
+        background-color: $quintClr;
         h1{
             text-align: center;
             font-size: 1.5em;
+            font-family: 'Shrikhand', cursive;
         }
         .choice{
+            background-color: $quintClr;
             display: flex;
             justify-content: space-around;
             &__entree{
-
                 h5{
                     font-size: 1em;
                     padding-left: 20px;
-
                 }
             &--detail{
-                border: 1px solid black;
+                border: 1px solid #fff;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+                background-color: #fff;
                 border-radius: 25px 25px;
                 padding-right: 190px;
                 padding-left: 20px;
-                margin-bottom: 10px;
+                margin-bottom: 20px;
                 h3{
                     font-weight: bold;
                     font-size: 1em;
                     line-height: 1px;
-
-                    
                 }
                 p{
                     font-size: 1em;
@@ -261,7 +263,6 @@ $imgRestaurant: (width: 100px, height: 50px);
                 h6{
                     font-weight: bold;
                     line-height: 1px;
-
                 }
             }
 
