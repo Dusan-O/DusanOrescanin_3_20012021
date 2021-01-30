@@ -249,11 +249,12 @@ $imgRestaurant: (width: 100px, height: 50px);
 
 .menu{
     width: 100%;
-
     .banniereRestaurant{
         width: auto;
+
         img{
             max-width: 100%;
+            
         }
     }
     .menu__restaurant{
@@ -265,7 +266,7 @@ $imgRestaurant: (width: 100px, height: 50px);
         display: flex;
         flex-direction: column;
         position: relative;
-        top: -300px;
+        top: -150px;
         background-color: $quintClr;
         h1{
             text-align: left;
@@ -288,7 +289,6 @@ $imgRestaurant: (width: 100px, height: 50px);
                 h5{
                     font-size: 1em;
                     padding-left: 20px;
-                    
                 }
 
             &--detail{
@@ -343,19 +343,25 @@ footer{
     width: auto;
     height: auto;
     padding: 5px;
+
+    h2{
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.3em;
+        color: $quartClr;
+        font-weight: lighter; 
+        padding-left: 175px;
+
+    }
     ul{
         list-style-type: none;
-        margin-left: 125px;
-        h2{
-            font-family: 'Shrikhand', cursive;
-            font-size: 1.3em;
-            color: $quartClr;
-            font-weight: lighter; 
-        }
+        padding-left: 175px;
+
     }
     a{
         color: $quartClr;
         text-decoration: none;
+        padding-left: 1px;
+
     }
 
 }
