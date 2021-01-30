@@ -35,12 +35,79 @@
                 
                 <div class="choice__entree">
                     <h5>Entrées</h5>
-                    
+ <!---
                     <div class="choice__entree--detail">
+                        <input type="checkbox" class="hidden" id="ckb2">
+                        <label class="barre-menu2" for="ckb2">
+                          <span class="col-plat-1">
+                            <strong>Tartare de poulpe acidulé</strong><br />
+                            Aux zestes d'orange</span>
+                          <span class="col-plat-2">25€</span>
+                          <span class="col-plat-4">
+                            <span class="coche-verte"> </span>
+                          </span>
+                        </label>
+                      </div>  
+                    
+label:after {
+  content: "✔";
+  position: absolute;
+  height: 100%;
+  font-size: 2em;
+  background: green;
+  width: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  right: -5em;
+  transition: 0.5s;
+  box-shadow: 0 0 5px black;
+}
+:checked + label:after {
+  right: 0;
+}
+label{
+  transition:0.2s;
+  background: lightgray;
+  border-radius: 10px;
+}
+:checked + label {
+  
+  background:tomato
+}
+
+/* ==== */
+.row-plat {
+  margin: 1em;
+  border: solid 1px;
+}
+.row-plat .barre-menu2 {
+  display: flex;
+  margin: 1em;
+  padding: 1em 5em 1em 1em;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.hidden {
+  position: absolute;
+  right: 100vw;
+}
+.col-plat-2 {
+  margin-left: auto;
+}
+
+                    
+                    -->
+                    
+                  <div class="choice__entree--detail">
                         <h3>Tartare de poulpe acidulé</h3>
                         <p>Aux zestes d'orange</p>
                         <h6>25€</h6>
                     </div>
+
+              
 
                     <div class="choice__entree--detail">
                         <h3>Velouté de légumes d'antan</h3>

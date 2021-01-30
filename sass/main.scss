@@ -19,27 +19,6 @@ $imgRestaurant: (width: 100px, height: 50px);
     font-family: 'Roboto', sans-serif;
 }
 
-.loader {
-	animation: loader 1500ms cubic-bezier(0.215, 0.610, 0.355, 2.000)  both;
-}
-@keyframes loader {
-    0% {
-      letter-spacing: -0.5em;
-      opacity: 0;
-    }
-    25%{
-        opacity: 0.3;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    70%{
-        opacity: 0.8;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 
 
 .header{
@@ -114,6 +93,11 @@ $imgRestaurant: (width: 100px, height: 50px);
             font-weight: bold;
             padding-left: 9%;
             width: 50%;
+            @media (max-width: 533px){
+                margin: 0;
+
+            }
+
             &--numero{
             border: 1px solid black;
             }
@@ -125,6 +109,10 @@ $imgRestaurant: (width: 100px, height: 50px);
             justify-content: space-around;
             width: 88%;
             margin: 0 4%;
+            @media (max-width: 533px){
+                margin: auto;
+
+            }
             li{
                 text-align:center;
                 list-style-type: none;
@@ -134,6 +122,15 @@ $imgRestaurant: (width: 100px, height: 50px);
                 font-size: 1em;
                 box-shadow: 5px 5px 5px 0px $eightClr;
                 background-color: $quintClr;
+                @media (max-width: 533px){
+                    font-size: 0.8em;
+                    padding-right: 120px;
+                }
+                @media (max-width: 320px){
+                    font-size: 0.7em;
+                    padding-right: 100px;
+                }
+                
                 &:hover{
                     background-color: $sixtClr;
                     .fas{
@@ -308,7 +305,6 @@ $imgRestaurant: (width: 100px, height: 50px);
                     font-size: 1em;
                     padding-left: 20px;
                 }
-
             &--detail{
                 border: 1px solid #fff;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
@@ -351,35 +347,30 @@ $imgRestaurant: (width: 100px, height: 50px);
         }
     }
 
-    
-
-
-
-
 footer{
     background-color: $seventhClr;
     width: auto;
     height: auto;
     padding: 5px;
+    
 
     h2{
         font-family: 'Shrikhand', cursive;
         font-size: 1.3em;
         color: $quartClr;
         font-weight: lighter; 
-        padding-left: 175px;
-
+        padding-left: 15%;
     }
     ul{
         list-style-type: none;
-        padding-left: 175px;
+        padding-left: 15%;
 
     }
     a{
         color: $quartClr;
         text-decoration: none;
-        padding-left: 1px;
 
     }
 
 }
+
