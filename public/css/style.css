@@ -257,17 +257,33 @@
   font-size: 1.5em;
   padding-right: 20px;
 }
-.menu .menu__restaurant .choice {
+.menu .menu__restaurant h1 .far:hover {
+  transform: scale(1.1);
+  animation-name: heart;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  font-weight: 700;
+}
+.menu .menu__restaurant h1 .far:before {
+  transition: color 1s ease-in-out;
+  color: red;
+}
+.menu .menu__restaurant h1 .far:hover::before {
+  cursor: pointer;
+  color: #FF79DA;
+}
+
+.choice {
   background-color: #f6f6f6;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.menu .menu__restaurant .choice__entree h5 {
+.choice__entree h5 {
   font-size: 1em;
   padding-left: 20px;
 }
-.menu .menu__restaurant .choice__entree--detail {
+.choice__entree--detail {
   border: 1px solid #fff;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   background-color: #fff;
@@ -276,24 +292,25 @@
   padding-left: 20px;
   margin-bottom: 20px;
 }
-.menu .menu__restaurant .choice__entree--detail h3 {
+.choice__entree--detail h3 {
   font-weight: bold;
   font-size: 1em;
   line-height: 1px;
 }
-.menu .menu__restaurant .choice__entree--detail p {
+.choice__entree--detail p {
   font-size: 1em;
   line-height: 1px;
 }
-.menu .menu__restaurant .choice__entree--detail h6 {
+.choice__entree--detail h6 {
   font-weight: bold;
   line-height: 1px;
 }
-.menu .menu__restaurant .commande {
+
+.commande {
   padding: 20px;
   text-align: center;
 }
-.menu .menu__restaurant .commande input {
+.commande input {
   border-radius: 30px;
   padding: 15px;
   background-color: #de6eda;

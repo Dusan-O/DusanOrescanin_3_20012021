@@ -279,6 +279,23 @@ $imgRestaurant: (width: 100px, height: 50px);
             .far{
                 font-size: 1.5em;
                 padding-right: 20px;
+                &:hover{
+                    transform: scale(1.1);
+                    animation-name: heart;
+                    animation-duration: 500ms;
+                    animation-fill-mode: forwards;
+                    font-weight: 700;
+                    }
+                &:before {
+                    transition: color 1s ease-in-out;
+                    color: red;
+                }
+                &:hover::before{
+                    cursor: pointer;
+                    color: $secndClr;
+                }
+                }
+            }
             }
         }
         .choice{
@@ -334,8 +351,8 @@ $imgRestaurant: (width: 100px, height: 50px);
         }
     }
 
-    }
-}
+    
+
 
 
 
