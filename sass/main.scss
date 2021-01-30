@@ -249,7 +249,7 @@ $imgRestaurant: (width: 100px, height: 50px);
 
 .menu{
     width: 100%;
-    height: auto;
+
     .banniereRestaurant{
         width: auto;
         img{
@@ -260,8 +260,7 @@ $imgRestaurant: (width: 100px, height: 50px);
         border-radius: 35px 35px 0 0;
         background-color: #fff;
         width: 80%;
-        height: 100%;
-        margin: 10%;
+        margin: 0 10%;
         z-index: 1;
         display: flex;
         flex-direction: column;
@@ -283,6 +282,7 @@ $imgRestaurant: (width: 100px, height: 50px);
         .choice{
             background-color: $quintClr;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             &__entree{
                 h5{
