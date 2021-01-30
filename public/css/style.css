@@ -3,7 +3,7 @@
 }
 
 .loader {
-  animation: loader 2s cubic-bezier(0.215, 0.61, 0.355, 2) both;
+  animation: loader 1500ms cubic-bezier(0.215, 0.61, 0.355, 2) both;
 }
 
 @keyframes loader {
@@ -22,11 +22,6 @@
   }
   100% {
     opacity: 1;
-  }
-}
-@keyframes heart {
-  100% {
-    overflow: hidden;
   }
 }
 .header {
@@ -102,6 +97,7 @@
   font-size: 1.5em;
   font-weight: bold;
   padding-left: 9%;
+  width: 50%;
 }
 .main .navBar__fonctionnement--numero {
   border: 1px solid black;
@@ -150,6 +146,7 @@
   font-size: 1.5em;
   font-weight: bold;
   padding-left: 9%;
+  width: 50%;
 }
 .mainPage .mainPages {
   display: flex;
@@ -203,22 +200,20 @@
 .mainPage .mainPages__imgCard--heart .far {
   font-size: 2em;
   padding-right: 10px;
-  color: red;
 }
 .mainPage .mainPages__imgCard--heart .far:hover {
-  transform: scale(1);
+  transform: scale(1.1);
   animation-name: heart;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
-  overflow: hidden;
 }
 .mainPage .mainPages__imgCard--heart .far:before {
-  font-weight: bold;
-  transition: color 1s ease-out;
+  transition: color 1s ease-in-out;
 }
 .mainPage .mainPages__imgCard--heart .far:hover::before {
-  color: yellow;
   cursor: pointer;
+  overflow: hidden;
+  color: red;
 }
 .mainPage .mainPages__imgCard h3 {
   margin-top: 0;
@@ -229,6 +224,7 @@
 
 .menu {
   width: 100%;
+  height: auto;
 }
 .menu .banniereRestaurant {
   width: auto;
@@ -240,7 +236,7 @@
   border-radius: 35px 35px 0 0;
   background-color: #fff;
   width: 80%;
-  height: auto;
+  height: 100%;
   margin: 10%;
   z-index: 1;
   display: flex;

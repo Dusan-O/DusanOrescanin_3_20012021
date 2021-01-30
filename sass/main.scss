@@ -20,7 +20,7 @@ $imgRestaurant: (width: 100px, height: 50px);
 }
 
 .loader {
-	animation: loader 2s cubic-bezier(0.215, 0.610, 0.355, 2.000)  both;
+	animation: loader 1500ms cubic-bezier(0.215, 0.610, 0.355, 2.000)  both;
 }
 @keyframes loader {
     0% {
@@ -41,13 +41,6 @@ $imgRestaurant: (width: 100px, height: 50px);
     }
   }
 
-  @keyframes heart {
-    100% {
-      overflow: hidden;
-    }
-  }
-  
-  
 
 .header{
     padding: 1em;
@@ -120,6 +113,7 @@ $imgRestaurant: (width: 100px, height: 50px);
             font-size: 1.5em;
             font-weight: bold;
             padding-left: 9%;
+            width: 50%;
             &--numero{
             border: 1px solid black;
             }
@@ -172,6 +166,8 @@ $imgRestaurant: (width: 100px, height: 50px);
         font-size: 1.5em;
         font-weight: bold;
         padding-left: 9%;
+        width: 50%;
+
 
     }
     .mainPages{
@@ -223,25 +219,20 @@ $imgRestaurant: (width: 100px, height: 50px);
                 .far{
                     font-size: 2em ;
                     padding-right: 10px;
-                    color: red;
                     &:hover{
-                        transform: scale(1);
+                        transform: scale(1.1);
                         animation-name: heart;
                         animation-duration: 500ms;
                         animation-fill-mode: forwards;
-                        overflow: hidden;
                         }
                     &:before {
-                        font-weight: bold;
-                        transition: color 1s ease-out;
-
+                        transition: color 1s ease-in-out;
                     }
                     &:hover::before{
-                        color: yellow;
                         cursor: pointer;
-
+                        overflow: hidden;
+                        color: red;
                     }
-
                     }
                 }
                 h3{
@@ -257,6 +248,7 @@ $imgRestaurant: (width: 100px, height: 50px);
 
 .menu{
     width: 100%;
+    height: auto;
     .banniereRestaurant{
         width: auto;
         img{
@@ -267,7 +259,7 @@ $imgRestaurant: (width: 100px, height: 50px);
         border-radius: 35px 35px 0 0;
         background-color: #fff;
         width: 80%;
-        height: auto;
+        height: 100%;
         margin: 10%;
         z-index: 1;
         display: flex;
