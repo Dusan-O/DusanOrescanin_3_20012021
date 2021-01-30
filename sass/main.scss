@@ -19,6 +19,23 @@ $imgRestaurant: (width: 100px, height: 50px);
     font-family: 'Roboto', sans-serif;
 }
 
+.loader {
+	animation: loader 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+@keyframes loader {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
 .header{
     padding: 1em;
     box-shadow: 0 0 1em rgba(0,0,0,.25);
@@ -28,10 +45,9 @@ $imgRestaurant: (width: 100px, height: 50px);
         
         &__arrow{
             font-size: 2em;
-            color: $seventhClr
-
+            color: $seventhClr;
+            position: absolute;
         }
-        
         &__logo{
         font-family: 'Shrikhand', cursive;
         font-size: 2em;
@@ -234,6 +250,12 @@ $imgRestaurant: (width: 100px, height: 50px);
             font-size: 1.5em;
             font-family: 'Shrikhand', cursive;
             padding-left: 20px;
+            display: flex;
+            justify-content: space-between;
+            .far{
+                font-size: 1.5em;
+                padding-right: 20px;
+            }
         }
         .choice{
             background-color: $quintClr;
@@ -243,7 +265,9 @@ $imgRestaurant: (width: 100px, height: 50px);
                 h5{
                     font-size: 1em;
                     padding-left: 20px;
+                    
                 }
+
             &--detail{
                 border: 1px solid #fff;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
