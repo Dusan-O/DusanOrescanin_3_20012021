@@ -40,6 +40,13 @@ $imgRestaurant: (width: 100px, height: 50px);
       opacity: 1;
     }
   }
+
+  @keyframes heart {
+    100% {
+      overflow: hidden;
+    }
+  }
+  
   
 
 .header{
@@ -216,8 +223,25 @@ $imgRestaurant: (width: 100px, height: 50px);
                 .far{
                     font-size: 2em ;
                     padding-right: 10px;
-                    &:active{
-                        color: red;
+                    color: red;
+                    &:hover{
+                        transform: scale(1);
+                        animation-name: heart;
+                        animation-duration: 500ms;
+                        animation-fill-mode: forwards;
+                        overflow: hidden;
+                        }
+                    &:before {
+                        font-weight: bold;
+                        transition: color 1s ease-out;
+
+                    }
+                    &:hover::before{
+                        color: yellow;
+                        cursor: pointer;
+
+                    }
+
                     }
                 }
                 h3{
@@ -229,7 +253,7 @@ $imgRestaurant: (width: 100px, height: 50px);
             }
         }
     }
-}
+
 
 .menu{
     width: 100%;

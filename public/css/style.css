@@ -24,6 +24,11 @@
     opacity: 1;
   }
 }
+@keyframes heart {
+  100% {
+    overflow: hidden;
+  }
+}
 .header {
   padding: 1em;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
@@ -198,11 +203,24 @@
 .mainPage .mainPages__imgCard--heart .far {
   font-size: 2em;
   padding-right: 10px;
-}
-.mainPage .mainPages__imgCard--heart .far:active {
   color: red;
 }
-.mainPage .mainPages__imgCard--heart h3 {
+.mainPage .mainPages__imgCard--heart .far:hover {
+  transform: scale(1);
+  animation-name: heart;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+.mainPage .mainPages__imgCard--heart .far:before {
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+.mainPage .mainPages__imgCard--heart .far:hover::before {
+  color: yellow;
+  cursor: pointer;
+}
+.mainPage .mainPages__imgCard h3 {
   margin-top: 0;
   padding-top: 5px;
   padding-left: 10px;
