@@ -20,15 +20,21 @@ $imgRestaurant: (width: 100px, height: 50px);
 }
 
 .loader {
-	animation: loader 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: loader 2s cubic-bezier(0.215, 0.610, 0.355, 2.000)  both;
 }
 @keyframes loader {
     0% {
       letter-spacing: -0.5em;
       opacity: 0;
     }
-    40% {
-      opacity: 0.6;
+    25%{
+        opacity: 0.3;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    70%{
+        opacity: 0.8;
     }
     100% {
       opacity: 1;

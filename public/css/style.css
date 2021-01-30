@@ -3,7 +3,7 @@
 }
 
 .loader {
-  animation: loader 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: loader 2s cubic-bezier(0.215, 0.61, 0.355, 2) both;
 }
 
 @keyframes loader {
@@ -11,8 +11,14 @@
     letter-spacing: -0.5em;
     opacity: 0;
   }
-  40% {
-    opacity: 0.6;
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.8;
   }
   100% {
     opacity: 1;
