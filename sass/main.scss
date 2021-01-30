@@ -121,6 +121,7 @@ $imgRestaurant: (width: 100px, height: 50px);
         ul{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-around;
             width: 88%;
             margin: 0 4%;
@@ -129,7 +130,7 @@ $imgRestaurant: (width: 100px, height: 50px);
                 list-style-type: none;
                 border-radius: 20px;
                 padding: 20px 180px 20px 20px;
-                margin: 20px 0;
+                margin: 3% 0;
                 font-size: 1em;
                 box-shadow: 5px 5px 5px 0px $eightClr;
                 background-color: $quintClr;

@@ -105,6 +105,7 @@
 .main .navBar ul {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: 88%;
   margin: 0 4%;
@@ -114,7 +115,7 @@
   list-style-type: none;
   border-radius: 20px;
   padding: 20px 180px 20px 20px;
-  margin: 20px 0;
+  margin: 3% 0;
   font-size: 1em;
   box-shadow: 5px 5px 5px 0px #eaeaea;
   background-color: #f6f6f6;
