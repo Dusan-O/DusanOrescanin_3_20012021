@@ -225,14 +225,15 @@ $imgRestaurant: (width: 100px, height: 50px);
                         animation-name: heart;
                         animation-duration: 500ms;
                         animation-fill-mode: forwards;
+                        font-weight: 700;
                         }
                     &:before {
                         transition: color 1s ease-in-out;
+                        color: red;
                     }
                     &:hover::before{
                         cursor: pointer;
-                        overflow: hidden;
-                        color: red;
+                        color: $secndClr;
                     }
                     }
                 }

@@ -207,14 +207,15 @@
   animation-name: heart;
   animation-duration: 500ms;
   animation-fill-mode: forwards;
+  font-weight: 700;
 }
 .mainPage .mainPages__imgCard--heart .far:before {
   transition: color 1s ease-in-out;
+  color: red;
 }
 .mainPage .mainPages__imgCard--heart .far:hover::before {
   cursor: pointer;
-  overflow: hidden;
-  color: red;
+  color: #FF79DA;
 }
 .mainPage .mainPages__imgCard h3 {
   margin-top: 0;
