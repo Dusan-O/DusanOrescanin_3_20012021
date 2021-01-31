@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -282,34 +283,57 @@
 .choice {
   background-color: #f6f6f6;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
+  margin: 1em;
 }
 .choice__entree h5 {
   font-size: 1em;
-  padding-left: 20px;
+  margin: 1em;
 }
-.choice__entree--detail {
-  border: 1px solid #fff;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  background-color: #fff;
-  border-radius: 25px 25px;
-  padding-right: 150px;
-  padding-left: 20px;
-  margin-bottom: 20px;
+.choice .row-plat {
+  margin: 1em;
 }
-.choice__entree--detail h3 {
-  font-weight: bold;
-  font-size: 1em;
-  line-height: 1px;
+.choice .row-plat label:after {
+  content: "✔";
+  position: absolute;
+  height: 100%;
+  font-size: 2em;
+  background: green;
+  width: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  right: -5em;
+  transition: 0.5s;
+  box-shadow: 0 0 5px black;
 }
-.choice__entree--detail p {
-  font-size: 1em;
-  line-height: 1px;
+.choice .row-plat :checked + label:after {
+  right: 0;
 }
-.choice__entree--detail h6 {
-  font-weight: bold;
-  line-height: 1px;
+.choice .row-plat label {
+  transition: 0.2s;
+  background: #fff;
+  border-radius: 10px;
+}
+.choice .row-plat :checked + label {
+  background: #fff;
+}
+.choice .row-plat .barre-menu2 {
+  display: flex;
+  margin: 1em;
+  padding: 1em 5em 1em 1em;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.choice .row-plat .hidden {
+  position: absolute;
+  right: 100vw;
+}
+.choice .row-plat .col-plat-2 {
+  margin-left: auto;
 }
 
 .commande {

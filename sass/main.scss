@@ -303,38 +303,59 @@ $imgRestaurant: (width: 100px, height: 50px);
         .choice{
             background-color: $quintClr;
             display: flex;
-            flex-wrap: wrap;
+            flex-direction: row;
             justify-content: space-around;
+            margin: 1em;
             &__entree{
                 h5{
                     font-size: 1em;
-                    padding-left: 20px;
-                }
-            &--detail{
-                border: 1px solid #fff;
-                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
-                background-color: #fff;
-                border-radius: 25px 25px;
-                padding-right: 150px;
-                padding-left: 20px;
-                margin-bottom: 20px;
-                h3{
-                    font-weight: bold;
-                    font-size: 1em;
-                    line-height: 1px;
-                }
-                p{
-                    font-size: 1em;
-                    line-height: 1px;
-                }
-                h6{
-                    font-weight: bold;
-                    line-height: 1px;
+                    margin: 1em;
                 }
             }
-
-            }
+            .row-plat{
+                margin: 1em;
+                label:after {
+                    content: "✔";
+                    position: absolute;
+                    height: 100%;
+                    font-size: 2em;
+                    background: green;
+                    width: 2em;
+                    text-align: center;
+                    line-height: 2em;
+                    border-radius: 0 10px 10px 0;
+                    color: white;
+                    right: -5em;
+                    transition: 0.5s;
+                    box-shadow: 0 0 5px black;
+                    }
+                    :checked + label:after {
+                    right: 0;
+                    }
+                    label{
+                    transition:0.2s;
+                    background: #fff;
+                    border-radius: 10px;
+                    }
+                    :checked + label {
+                        background:#fff;
+                    }
+                    .barre-menu2 {
+                        display: flex;
+                        margin: 1em;
+                        padding: 1em 5em 1em 1em;
+                        align-items: center;
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    .hidden {
+                        position: absolute;
+                        right: 100vw;
+                    }
+                    .col-plat-2 {
+                        margin-left: auto;
+                    }
+                }
         }
     .commande{
         padding: 20px;
