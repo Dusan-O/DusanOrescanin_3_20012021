@@ -1,4 +1,18 @@
 @charset "UTF-8";
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0.3;
+  }
+  66% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -240,6 +254,12 @@
   object-position: 50% 50%;
   overflow: hidden;
 }
+@media (max-width: 768px) {
+  .menu .banniereRestaurant img {
+    object-fit: cover;
+    object-position: 40% 30%;
+  }
+}
 .menu .menu__restaurant {
   border-radius: 35px 35px 0 0;
   background-color: #fff;
@@ -249,8 +269,14 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -150px;
+  top: -100px;
   background-color: #f6f6f6;
+}
+@media (max-width: 768px) {
+  .menu .menu__restaurant {
+    width: 100%;
+    margin: 0;
+  }
 }
 .menu .menu__restaurant h1 {
   text-align: left;
@@ -285,13 +311,25 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
   margin: 1em;
 }
 .choice__entree h5 {
   font-size: 1em;
-  margin: 1em;
+  margin: 2em;
+  text-transform: uppercase;
+  line-height: 1px;
+}
+.choice__entree p {
+  margin: 2em;
+  line-height: 1px;
+  color: #75e9d3;
+  font-weight: bolder;
 }
 .choice .row-plat {
+  animation: fadeInAnimation ease-in-out 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   margin: 1em;
 }
 .choice .row-plat label:after {
@@ -299,7 +337,7 @@
   position: absolute;
   height: 100%;
   font-size: 2em;
-  background: green;
+  background: #75e9d3;
   width: 2em;
   text-align: center;
   line-height: 2em;
@@ -307,9 +345,8 @@
   color: white;
   right: -5em;
   transition: 0.5s;
-  box-shadow: 0 0 5px black;
 }
-.choice .row-plat :checked + label:after {
+.choice .row-plat :hover + label:after {
   right: 0;
 }
 .choice .row-plat label {
@@ -317,7 +354,7 @@
   background: #fff;
   border-radius: 10px;
 }
-.choice .row-plat :checked + label {
+.choice .row-plat :hover + label {
   background: #fff;
 }
 .choice .row-plat .barre-menu2 {
@@ -334,6 +371,29 @@
 }
 .choice .row-plat .col-plat-2 {
   margin-left: auto;
+}
+.choice .row-plat1 {
+  animation: fadeInAnimation ease-in-out 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin: 1em;
+}
+.choice .row-plat2 {
+  animation: fadeInAnimation ease-in-out 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin: 1em;
+}
+.choice .row-plat3 {
+  animation: fadeInAnimation ease-in-out 3s;
+  animation-fill-mode: forwards;
+  margin: 1em;
+}
+.choice .row-plat4 {
+  animation: fadeInAnimation ease-in-out 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin: 1em;
 }
 
 .commande {

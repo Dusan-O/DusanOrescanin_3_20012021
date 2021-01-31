@@ -14,7 +14,20 @@ $fontSizeMain: 2em;
 $padding: 15px;
 $imgRestaurant: (width: 100px, height: 50px);
 
-
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    33%{
+        opacity: 0.3;
+    }
+    66%{
+        opacity: 0.6;
+    }
+    100% { 
+        opacity: 1; 
+     } 
+} 
 *{
     font-family: 'Roboto', sans-serif;
 }
@@ -257,6 +270,12 @@ $imgRestaurant: (width: 100px, height: 50px);
             object-fit: cover;
             object-position: 50% 50%;
              overflow: hidden;
+             @media (max-width: 768px){
+                 object-fit:cover;
+                 object-position: 40% 30%;
+
+             }
+
             
         }
     }
@@ -269,8 +288,12 @@ $imgRestaurant: (width: 100px, height: 50px);
         display: flex;
         flex-direction: column;
         position: relative;
-        top: -150px;
+        top: -100px;
         background-color: $quintClr;
+        @media (max-width: 768px){
+            width: 100%;
+            margin: 0;
+        }
         h1{
             text-align: left;
             font-size: 1.5em;
@@ -305,21 +328,35 @@ $imgRestaurant: (width: 100px, height: 50px);
             display: flex;
             flex-direction: row;
             justify-content: space-around;
+            flex-wrap: wrap;
             margin: 1em;
             &__entree{
                 h5{
                     font-size: 1em;
-                    margin: 1em;
+                    margin: 2em;
+                    text-transform: uppercase;
+                    line-height: 1px;
+
+                }
+                p{
+                    margin: 2em;
+                    line-height: 1px;
+                    color: #75e9d3;
+                    font-weight: bolder;
+
                 }
             }
             .row-plat{
+                animation: fadeInAnimation ease-in-out 2s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
                 margin: 1em;
                 label:after {
                     content: "✔";
                     position: absolute;
                     height: 100%;
                     font-size: 2em;
-                    background: green;
+                    background: #75e9d3;
                     width: 2em;
                     text-align: center;
                     line-height: 2em;
@@ -327,9 +364,8 @@ $imgRestaurant: (width: 100px, height: 50px);
                     color: white;
                     right: -5em;
                     transition: 0.5s;
-                    box-shadow: 0 0 5px black;
                     }
-                    :checked + label:after {
+                    :hover + label:after {
                     right: 0;
                     }
                     label{
@@ -337,7 +373,7 @@ $imgRestaurant: (width: 100px, height: 50px);
                     background: #fff;
                     border-radius: 10px;
                     }
-                    :checked + label {
+                    :hover + label {
                         background:#fff;
                     }
                     .barre-menu2 {
@@ -356,6 +392,29 @@ $imgRestaurant: (width: 100px, height: 50px);
                         margin-left: auto;
                     }
                 }
+            .row-plat1{
+                animation: fadeInAnimation ease-in-out 1s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                margin: 1em;
+            }
+            .row-plat2{
+                animation: fadeInAnimation ease-in-out 2s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                margin: 1em;
+            }
+            .row-plat3{
+                animation: fadeInAnimation ease-in-out 3s;
+                animation-fill-mode: forwards;
+                margin: 1em;
+            }
+            .row-plat4{
+                animation: fadeInAnimation ease-in-out 4s;
+                animation-iteration-count: 1;
+                animation-fill-mode: forwards;
+                margin: 1em;
+            }
         }
     .commande{
         padding: 20px;
