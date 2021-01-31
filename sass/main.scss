@@ -28,8 +28,84 @@ $imgRestaurant: (width: 100px, height: 50px);
         opacity: 1; 
      } 
 } 
+
 *{
     font-family: 'Roboto', sans-serif;
+}
+
+	
+body > .loader{
+    align-items: center;
+    background: #69c2a3;
+    display: flex;
+    justify-content: center;
+    .loader{ 
+        html, body {
+        margin: 0;
+        height: 100%;
+    }
+}
+}
+
+
+.loader {
+	animation: rotate 2s linear infinite normal;
+	height: 10px;
+	position: relative;
+	width: 10px;
+	
+	&__ball {
+		animation: move1 1s ease-in-out infinite alternate;
+		background-color: red;
+		border-radius: 50%;
+		height: 10px;
+		position: absolute;
+		width: 10px;
+		
+		&:nth-of-type(2) {
+			animation-name: move2;
+		}
+		
+		&:nth-of-type(3) {
+			animation-name: move3;
+		}
+	}
+}
+
+@keyframes rotate {
+	from {
+		transform: rotate(0);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes move1 {
+	0%, 5% {
+		transform: translate(0, 0);
+	}
+	to {
+		transform: translate(0, -100%);
+	}
+}
+
+@keyframes move2 {
+	0%, 5% {
+		transform: translate(0, 0);
+	}
+	to {
+		transform: translate(100%, 100%);
+	}
+}
+
+@keyframes move3 {
+	0%, 15% {
+		transform: translate(0);
+	}
+	to {
+		transform: translate(-100%, 100%);
+	}
 }
 
 
@@ -256,14 +332,14 @@ $imgRestaurant: (width: 100px, height: 50px);
         }
     }
 
-
 .menu{
     width: 100%;
     height: 100%;
+    background-color: $quintClr;
+
     .banniereRestaurant{
         max-width: 100%;
         height: 600px;
-
         img{
             width: 100%;
             height: 600px;
@@ -273,10 +349,7 @@ $imgRestaurant: (width: 100px, height: 50px);
              @media (max-width: 768px){
                  object-fit:cover;
                  object-position: 40% 30%;
-
              }
-
-            
         }
     }
     .menu__restaurant{
@@ -288,7 +361,7 @@ $imgRestaurant: (width: 100px, height: 50px);
         display: flex;
         flex-direction: column;
         position: relative;
-        top: -100px;
+        bottom: 100px;
         background-color: $quintClr;
         @media (max-width: 768px){
             width: 100%;
@@ -322,7 +395,7 @@ $imgRestaurant: (width: 100px, height: 50px);
                 }
             }
             }
-        }
+}
         .choice{
             background-color: $quintClr;
             display: flex;
@@ -351,6 +424,7 @@ $imgRestaurant: (width: 100px, height: 50px);
                 animation-iteration-count: 1;
                 animation-fill-mode: forwards;
                 margin: 1em;
+                
                 label:after {
                     content: "✔";
                     position: absolute;
@@ -394,26 +468,19 @@ $imgRestaurant: (width: 100px, height: 50px);
                 }
             .row-plat1{
                 animation: fadeInAnimation ease-in-out 1s;
-                animation-iteration-count: 1;
                 animation-fill-mode: forwards;
-                margin: 1em;
             }
             .row-plat2{
                 animation: fadeInAnimation ease-in-out 2s;
-                animation-iteration-count: 1;
                 animation-fill-mode: forwards;
-                margin: 1em;
             }
             .row-plat3{
                 animation: fadeInAnimation ease-in-out 3s;
                 animation-fill-mode: forwards;
-                margin: 1em;
             }
             .row-plat4{
                 animation: fadeInAnimation ease-in-out 4s;
-                animation-iteration-count: 1;
                 animation-fill-mode: forwards;
-                margin: 1em;
             }
         }
     .commande{
@@ -430,6 +497,7 @@ $imgRestaurant: (width: 100px, height: 50px);
             cursor: pointer;
         }
     }
+
 
 footer{
     background-color: $seventhClr;
@@ -452,4 +520,3 @@ footer{
         text-decoration: none;
     }
 }
-

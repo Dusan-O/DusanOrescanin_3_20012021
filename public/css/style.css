@@ -17,6 +17,70 @@
   font-family: "Roboto", sans-serif;
 }
 
+body > .loader {
+  align-items: center;
+  background: #69c2a3;
+  display: flex;
+  justify-content: center;
+}
+body > .loader .loader html, body > .loader .loader body {
+  margin: 0;
+  height: 100%;
+}
+
+.loader {
+  animation: rotate 2s linear infinite normal;
+  height: 10px;
+  position: relative;
+  width: 10px;
+}
+.loader__ball {
+  animation: move1 1s ease-in-out infinite alternate;
+  background-color: red;
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+.loader__ball:nth-of-type(2) {
+  animation-name: move2;
+}
+.loader__ball:nth-of-type(3) {
+  animation-name: move3;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move1 {
+  0%, 5% {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0, -100%);
+  }
+}
+@keyframes move2 {
+  0%, 5% {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(100%, 100%);
+  }
+}
+@keyframes move3 {
+  0%, 15% {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-100%, 100%);
+  }
+}
 .header {
   padding: 1em;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
@@ -242,6 +306,7 @@
 .menu {
   width: 100%;
   height: 100%;
+  background-color: #f6f6f6;
 }
 .menu .banniereRestaurant {
   max-width: 100%;
@@ -269,7 +334,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -100px;
+  bottom: 100px;
   background-color: #f6f6f6;
 }
 @media (max-width: 768px) {
@@ -374,26 +439,19 @@
 }
 .choice .row-plat1 {
   animation: fadeInAnimation ease-in-out 1s;
-  animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  margin: 1em;
 }
 .choice .row-plat2 {
   animation: fadeInAnimation ease-in-out 2s;
-  animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  margin: 1em;
 }
 .choice .row-plat3 {
   animation: fadeInAnimation ease-in-out 3s;
   animation-fill-mode: forwards;
-  margin: 1em;
 }
 .choice .row-plat4 {
   animation: fadeInAnimation ease-in-out 4s;
-  animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  margin: 1em;
 }
 
 .commande {
