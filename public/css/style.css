@@ -17,30 +17,26 @@
   font-family: "Roboto", sans-serif;
 }
 
-body > .loader {
-  align-items: center;
-  background: #69c2a3;
+.loader {
+  animation-name: loader;
+  height: 173vh;
+  position: absolute;
+  width: 100%;
+  background: #fff;
+  opacity: 0.9;
   display: flex;
   justify-content: center;
-}
-body > .loader .loader html, body > .loader .loader body {
+  align-items: center;
   margin: 0;
-  height: 100%;
-}
-
-.loader {
-  animation: rotate 2s linear infinite normal;
-  height: 10px;
-  position: relative;
-  width: 10px;
 }
 .loader__ball {
-  animation: move1 1s ease-in-out infinite alternate;
+  animation: rotate 2s linear infinite normal;
+  animation: move1 1s ease-in-out infinite alternate 0.2ms;
   background-color: red;
   border-radius: 50%;
-  height: 10px;
-  position: absolute;
-  width: 10px;
+  position: relative;
+  height: 40px;
+  width: 40px;
 }
 .loader__ball:nth-of-type(2) {
   animation-name: move2;

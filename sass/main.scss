@@ -33,45 +33,37 @@ $imgRestaurant: (width: 100px, height: 50px);
     font-family: 'Roboto', sans-serif;
 }
 
-	
-body > .loader{
-    align-items: center;
-    background: #69c2a3;
-    display: flex;
-    justify-content: center;
-    .loader{ 
-        html, body {
-        margin: 0;
-        height: 100%;
-    }
-}
-}
+
+
 
 
 .loader {
-	animation: rotate 2s linear infinite normal;
-	height: 10px;
-	position: relative;
-	width: 10px;
-	
+    animation-name: loader;
+    height: 173vh;
+    position: absolute;
+    width: 100%;
+    background: #fff;
+    opacity: 0.9;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 	&__ball {
-		animation: move1 1s ease-in-out infinite alternate;
+        animation: rotate 2s linear infinite normal;
+        animation: move1 1s ease-in-out infinite alternate 0.2ms;
 		background-color: red;
-		border-radius: 50%;
-		height: 10px;
-		position: absolute;
-		width: 10px;
-		
+        border-radius: 50%;
+        position: relative;
+		height: 40px;
+		width: 40px;
 		&:nth-of-type(2) {
 			animation-name: move2;
 		}
-		
 		&:nth-of-type(3) {
 			animation-name: move3;
 		}
 	}
 }
-
 @keyframes rotate {
 	from {
 		transform: rotate(0);
@@ -80,7 +72,6 @@ body > .loader{
 		transform: rotate(360deg);
 	}
 }
-
 @keyframes move1 {
 	0%, 5% {
 		transform: translate(0, 0);
@@ -89,7 +80,6 @@ body > .loader{
 		transform: translate(0, -100%);
 	}
 }
-
 @keyframes move2 {
 	0%, 5% {
 		transform: translate(0, 0);
@@ -98,7 +88,6 @@ body > .loader{
 		transform: translate(100%, 100%);
 	}
 }
-
 @keyframes move3 {
 	0%, 15% {
 		transform: translate(0);
@@ -107,6 +96,7 @@ body > .loader{
 		transform: translate(-100%, 100%);
 	}
 }
+
 
 
 
