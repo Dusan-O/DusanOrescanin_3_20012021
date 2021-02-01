@@ -49,9 +49,9 @@ $imgRestaurant: (width: 100px, height: 50px);
     align-items: center;
     margin: 0;
 	&__ball {
-        animation: rotate 2s linear infinite normal;
+        animation: rotate 2s ease-in-out infinite normal;
         animation: move1 1s ease-in-out infinite alternate 0.2ms;
-		background-color: red;
+		background-color:$ninthClr;
         border-radius: 50%;
         position: relative;
 		height: 40px;

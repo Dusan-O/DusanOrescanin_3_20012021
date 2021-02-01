@@ -30,9 +30,9 @@
   margin: 0;
 }
 .loader__ball {
-  animation: rotate 2s linear infinite normal;
+  animation: rotate 2s ease-in-out infinite normal;
   animation: move1 1s ease-in-out infinite alternate 0.2ms;
-  background-color: red;
+  background-color: #de6eda;
   border-radius: 50%;
   position: relative;
   height: 40px;
