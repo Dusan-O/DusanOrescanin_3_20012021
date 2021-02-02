@@ -49,7 +49,7 @@ body{
     opacity: 0.8;
     z-index: 99999;
     overflow:hidden;
-    scroll-behavior: unset;
+    scroll-behavior: unset; 
     .loader, .loader:before, .loader:after {
         border-radius: 50%;
         width: 2.5em;
