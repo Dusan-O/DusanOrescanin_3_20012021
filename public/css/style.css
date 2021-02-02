@@ -17,22 +17,28 @@
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 .loading {
   position: absolute;
   top: O;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #fff;
   opacity: 0.8;
   z-index: 99999;
+  overflow: hidden;
+  scroll-behavior: unset;
 }
 .loading .loader, .loading .loader:before, .loading .loader:after {
   border-radius: 50%;
   width: 2.5em;
   height: 2.5em;
   animation-fill-mode: both;
-  animation: load 1.8s infinite ease-in-out;
+  animation: load 1.8s 3 ease-in-out;
 }
 .loading .loader {
   color: #de6eda;
@@ -378,6 +384,9 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   margin: 1em;
+}
+.choice .row-plat:hover {
+  margin: 0;
 }
 .choice .row-plat label:after {
   content: "✔";
