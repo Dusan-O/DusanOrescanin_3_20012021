@@ -419,7 +419,7 @@
 .choice .row-plat .barre-menu2 {
   display: flex;
   margin: 1em;
-  padding: 1em 5em 1em 1em;
+  padding: 1em 8em 1em 2em;
   align-items: center;
   position: relative;
   overflow: hidden;
@@ -428,9 +428,18 @@
   position: absolute;
   right: 100vw;
 }
-.choice .row-plat .col-plat-2 {
-  margin-left: auto;
+.choice .row-plat .col-plat-1 {
   font-weight: bold;
+}
+.choice .row-plat .col-plat-2 {
+  font-weight: lighter;
+  display: flex;
+  line-height: 30px;
+}
+.choice .row-plat .col-plat-3 {
+  font-weight: bold;
+  position: absolute;
+  right: 15px;
 }
 .choice .row-plat1 {
   animation: fadeInAnimation ease-in-out 1s;

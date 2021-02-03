@@ -452,7 +452,7 @@ $imgRestaurant: (width: 100px, height: 50px);
                 .barre-menu2 {
                     display: flex;
                     margin: 1em;
-                    padding: 1em 5em 1em 1em;
+                    padding: 1em 8em 1em 2em;
                     align-items: center;
                     position: relative;
                     overflow: hidden;
@@ -461,10 +461,20 @@ $imgRestaurant: (width: 100px, height: 50px);
                     position: absolute;
                     right: 100vw;
                 }
-                .col-plat-2 {
-                    margin-left: auto;
+                .col-plat-1{
                     font-weight: bold;
                 }
+                .col-plat-2{
+                    font-weight: lighter;
+                    display: flex;
+                    line-height: 30px;
+                }
+                .col-plat-3{
+                    font-weight: bold;
+                    position: absolute;
+                    right: 15px;
+                }
+                // ajouter col plat 3 en copiant les valeurs de alafrancaise.html
             }
             .row-plat1{
                 animation: fadeInAnimation ease-in-out 1s;
