@@ -31,6 +31,7 @@ $imgRestaurant: (width: 100px, height: 50px);
 
 *{
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
 
 }
 
@@ -367,6 +368,7 @@ $imgRestaurant: (width: 100px, height: 50px);
             padding-left: 20px;
             display: flex;
             justify-content: space-between;
+            padding-top: 15px;
             .far{
                 font-size: 1.5em;
                 padding-right: 20px;
@@ -431,12 +433,9 @@ $imgRestaurant: (width: 100px, height: 50px);
                     transition: 0.5s;
                     }
 
-                    // telecharger coche sur FA, puis, place sur HTML, appliquer le CSS
-                    // du lable:affter sur la coche de FA
-                    // 
-                :hover > .far { // au lieu de laberl:after, mettre l'icone directement
-                    right: 0;       // au lieu du + mettre >
-                                    // mettre l'animation
+                :hover > .far { 
+                    right: 0;      
+                                    
                     }  
                 label{
                 transition:0.2s;

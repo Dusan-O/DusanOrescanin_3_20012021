@@ -14,6 +14,7 @@
 }
 * {
   font-family: "Roboto", sans-serif;
+  margin: 0px;
 }
 
 .loading {
@@ -342,6 +343,7 @@
   padding-left: 20px;
   display: flex;
   justify-content: space-between;
+  padding-top: 15px;
 }
 .menu .menu__restaurant h1 .far {
   font-size: 1.5em;
