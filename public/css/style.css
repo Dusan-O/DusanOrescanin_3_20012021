@@ -430,6 +430,7 @@
 }
 .choice .row-plat .col-plat-2 {
   margin-left: auto;
+  font-weight: bold;
 }
 .choice .row-plat1 {
   animation: fadeInAnimation ease-in-out 1s;
