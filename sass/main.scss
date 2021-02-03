@@ -34,38 +34,34 @@ $imgRestaurant: (width: 100px, height: 50px);
 
 }
 
-body{
-    margin: 0;
-}
-
 
 .loading{
     position: absolute;
-    top: O;
+    top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #fff;
-    opacity: 0.8;
     z-index: 99999;
     overflow:hidden;
-    scroll-behavior: unset; 
+    animation: loading 4s forwards;
+    background-color: #fff;
+    opacity: 0.8;
     .loader, .loader:before, .loader:after {
         border-radius: 50%;
         width: 2.5em;
         height: 2.5em;
         animation-fill-mode: both;
-        animation: load 1.8s 3 ease-in-out;
+        animation: load 2s 2 ease-in-out;
     }
     .loader {
         color: $ninthClr;
         font-size: 10px;
         margin: 80px auto;
+        top: 50%;
         position: relative;
         text-indent: -9999em;
         transform: translateZ(0);
         animation-delay: -0.16s;
-        
     }
     .loader:before, .loader:after {
         content: '';
@@ -79,7 +75,16 @@ body{
     .loader:after {
         left: 3.5em;
     }
+}
 
+@keyframes loading {
+    90%{
+        
+        left: 0px;
+    }
+    100% {
+        left: -10000px;
+    }
 }
 
 @keyframes load {
@@ -317,6 +322,7 @@ body{
             }
         }
     }
+    
 
 .menu{
     width: 100%;
@@ -353,6 +359,7 @@ body{
             width: 100%;
             margin: 0;
         }
+        
         h1{
             text-align: left;
             font-size: 1.5em;
@@ -382,6 +389,7 @@ body{
             }
             }
 }
+
         .choice{
             background-color: $quintClr;
             display: flex;
@@ -402,7 +410,6 @@ body{
                     line-height: 1px;
                     color: #75e9d3;
                     font-weight: bolder;
-
                 }
             }
             .row-plat{
@@ -410,12 +417,7 @@ body{
                 animation-iteration-count: 1;
                 animation-fill-mode: forwards;
                 margin: 1em;
-                &:hover{
-                    margin: 0;
-                }
-                
                 label:after {
-                    content: "✔";
                     position: absolute;
                     height: 100%;
                     font-size: 2em;
@@ -428,33 +430,38 @@ body{
                     right: -5em;
                     transition: 0.5s;
                     }
-                    :hover + label:after {
-                        right: 0;
-                        }
-                    label{
-                    transition:0.2s;
-                    background: #fff;
-                    border-radius: 10px;
-                    }
-                    :hover + label {
-                        background:#fff;
-                    }
-                    .barre-menu2 {
-                        display: flex;
-                        margin: 1em;
-                        padding: 1em 5em 1em 1em;
-                        align-items: center;
-                        position: relative;
-                        overflow: hidden;
-                    }
-                    .hidden {
-                        position: absolute;
-                        right: 100vw;
-                    }
-                    .col-plat-2 {
-                        margin-left: auto;
-                    }
+
+                    // telecharger coche sur FA, puis, place sur HTML, appliquer le CSS
+                    // du lable:affter sur la coche de FA
+                    // 
+                :hover + label:after { // au lieu de laberl:after, mettre l'icone directement
+                    right: 0;       // au lieu du + mettre >
+                                    // mettre l'animation
+                    }  
+                label{
+                transition:0.2s;
+                background: #fff;
+                border-radius: 10px;
                 }
+                :hover + label {
+                    background:#fff;
+                }
+                .barre-menu2 {
+                    display: flex;
+                    margin: 1em;
+                    padding: 1em 5em 1em 1em;
+                    align-items: center;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .hidden {
+                    position: absolute;
+                    right: 100vw;
+                }
+                .col-plat-2 {
+                    margin-left: auto;
+                }
+            }
             .row-plat1{
                 animation: fadeInAnimation ease-in-out 1s;
                 animation-fill-mode: forwards;
