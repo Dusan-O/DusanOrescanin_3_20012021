@@ -399,6 +399,7 @@ $imgRestaurant: (width: 100px, height: 50px);
             justify-content: space-around;
             flex-wrap: wrap;
             margin: 1em;
+            
             &__entree{
                 h5{
                     font-size: 1em;
@@ -419,6 +420,7 @@ $imgRestaurant: (width: 100px, height: 50px);
                 animation-iteration-count: 1;
                 animation-fill-mode: forwards;
                 margin: 1em;
+                
                 .far {
                     position: absolute;
                     height: 100%;
@@ -441,6 +443,8 @@ $imgRestaurant: (width: 100px, height: 50px);
                 transition:0.2s;
                 background: #fff;
                 border-radius: 10px;
+                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
                 }
                 :hover + label {
                     background:#fff;
