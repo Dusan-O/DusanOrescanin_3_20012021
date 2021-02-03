@@ -389,7 +389,7 @@
   animation-fill-mode: forwards;
   margin: 1em;
 }
-.choice .row-plat label:after {
+.choice .row-plat .far {
   position: absolute;
   height: 100%;
   font-size: 2em;
@@ -402,7 +402,7 @@
   right: -5em;
   transition: 0.5s;
 }
-.choice .row-plat :hover + label:after {
+.choice .row-plat :hover > .far {
   right: 0;
 }
 .choice .row-plat label {

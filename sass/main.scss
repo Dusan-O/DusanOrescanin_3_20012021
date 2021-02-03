@@ -417,7 +417,7 @@ $imgRestaurant: (width: 100px, height: 50px);
                 animation-iteration-count: 1;
                 animation-fill-mode: forwards;
                 margin: 1em;
-                label:after {
+                .far {
                     position: absolute;
                     height: 100%;
                     font-size: 2em;
@@ -434,7 +434,7 @@ $imgRestaurant: (width: 100px, height: 50px);
                     // telecharger coche sur FA, puis, place sur HTML, appliquer le CSS
                     // du lable:affter sur la coche de FA
                     // 
-                :hover + label:after { // au lieu de laberl:after, mettre l'icone directement
+                :hover > .far { // au lieu de laberl:after, mettre l'icone directement
                     right: 0;       // au lieu du + mettre >
                                     // mettre l'animation
                     }  
