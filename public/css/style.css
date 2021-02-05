@@ -481,42 +481,6 @@ footer {
   padding: 5px;
   position: relative;
 }
-@media (max-width: 1590px) {
-  footer {
-    position: relative;
-    top: 390px;
-  }
-}
-@media (max-width: 1094px) {
-  footer {
-    position: relative;
-    top: 780px;
-  }
-}
-@media (min-width: 480px) and (max-width: 493px) {
-  footer {
-    position: relative;
-    top: 810px;
-  }
-}
-@media (max-width: 479px) {
-  footer {
-    position: relative;
-    top: 840px;
-  }
-}
-@media (max-width: 472px) {
-  footer {
-    position: relative;
-    top: 870px;
-  }
-}
-@media (min-width: 420px) and (max-width: 428px) {
-  footer {
-    position: relative;
-    top: 900px;
-  }
-}
 footer h2 {
   font-family: "Shrikhand", cursive;
   font-size: 1.3em;

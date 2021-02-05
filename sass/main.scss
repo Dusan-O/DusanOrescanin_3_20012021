@@ -512,31 +512,7 @@ footer{
     height: auto;
     padding: 5px;
     position: relative;
-    @media (max-width:1590px){
-        position: relative;
-        top: 390px;
-    }
-    @media (max-width:1094px){
-        position: relative;
-        top: 780px;
-    }
-    @media (min-width:480px)and (max-width:493px){
-        position: relative;
-        top: 810px;
-    }
-    
-    @media (max-width: 479px){
-        position: relative;
-        top: 840px;
-    }
-    @media (max-width: 472px){
-        position: relative;
-        top: 870px;
-    }
-    @media (min-width: 420px)and (max-width: 428px){
-        position: relative;
-        top: 900px;
-    }
+  
     h2{
         font-family: 'Shrikhand', cursive;
         font-size: 1.3em;
