@@ -327,12 +327,10 @@ $imgRestaurant: (width: 100px, height: 50px);
 
 .menu{
     width: 100%;
-    height: 100%;
-
+    height: 1000px;
     .banniereRestaurant{
         max-width: 100%;
         height: 600px;
-
         img{
             width: 100%;
             height: 600px;
@@ -354,7 +352,7 @@ $imgRestaurant: (width: 100px, height: 50px);
         display: flex;
         flex-direction: column;
         position: relative;
-        bottom: 100px;
+        bottom: 160px;
         background-color: $quintClr;
         @media (max-width: 768px){
             width: 100%;
@@ -474,8 +472,6 @@ $imgRestaurant: (width: 100px, height: 50px);
                     position: absolute;
                     right: 15px; 
                 }
-                // ajouter col plat 3 en copiant les valeurs de alafrancaise.html
-                // a la note enchanntée et au delice des sens
             }
             .row-plat1{
                 animation: fadeInAnimation ease-in-out 1s;
@@ -515,6 +511,32 @@ footer{
     width: auto;
     height: auto;
     padding: 5px;
+    position: relative;
+    @media (max-width:1590px){
+        position: relative;
+        top: 390px;
+    }
+    @media (max-width:1094px){
+        position: relative;
+        top: 780px;
+    }
+    @media (min-width:480px)and (max-width:493px){
+        position: relative;
+        top: 810px;
+    }
+    
+    @media (max-width: 479px){
+        position: relative;
+        top: 840px;
+    }
+    @media (max-width: 472px){
+        position: relative;
+        top: 870px;
+    }
+    @media (min-width: 420px)and (max-width: 428px){
+        position: relative;
+        top: 900px;
+    }
     h2{
         font-family: 'Shrikhand', cursive;
         font-size: 1.3em;
