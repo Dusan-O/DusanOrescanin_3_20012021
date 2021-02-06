@@ -132,13 +132,31 @@
 .main .description__boutton input {
   border-radius: 30px;
   padding: 15px;
-  background-color: #de6eda;
-  box-shadow: 5px 5px 5px 0px #de6eda;
-  background: linear-gradient(180deg, #ee76cf 0%, #df71cf 50%, #9058d0 100%);
-  font-size: 1.3em;
+  background: linear-gradient(to top, #9356dc, #ff79da);
   color: #fff;
+  box-shadow: 8px 10px 9px #737373;
+  font-size: 1.3em;
   padding: 10px 20px;
   cursor: pointer;
+}
+.main .description__boutton input:hover {
+  box-shadow: 8px 10px 9px #353535;
+}
+.main .description__boutton input:hover::after {
+  opacity: 1;
+}
+.main .description__boutton input::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #9b63df, #ff88de);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 500ms;
+  border-radius: 10rem;
 }
 .main .navBar {
   display: flex;
@@ -467,13 +485,31 @@
 .commande input {
   border-radius: 30px;
   padding: 15px;
-  background-color: #de6eda;
-  box-shadow: 5px 5px 5px 0px #de6eda;
-  background: linear-gradient(180deg, #ee76cf 0%, #df71cf 50%, #9058d0 100%);
-  font-size: 1.3em;
+  background: linear-gradient(to top, #9356dc, #ff79da);
   color: #fff;
+  box-shadow: 8px 10px 9px #737373;
+  font-size: 1.3em;
   padding: 10px 20px;
   cursor: pointer;
+}
+.commande input:hover {
+  box-shadow: 8px 10px 9px #353535;
+}
+.commande input:hover::after {
+  opacity: 1;
+}
+.commande input::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to top, #9b63df, #ff88de);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 500ms;
+  border-radius: 10rem;
 }
 
 footer {

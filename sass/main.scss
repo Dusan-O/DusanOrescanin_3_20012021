@@ -8,12 +8,20 @@ $sixtClr: #f5edff;
 $seventhClr: #353535;
 $eightClr: #eaeaea;
 $ninthClr: #de6eda;
+$color-primary: #9356dc;
+	$color-secondary: #ff79da;
+	$color-tertiary : #99e2d0;
 $borderRad: 30px;
 $borderRadius: 10px;
 $border: 1px solid black;
 $fontSizeMain: 2em;
 $padding: 15px;
 $imgRestaurant: (width: 100px, height: 50px);
+
+$shadow : (
+    hover: 8px 10px 9px #737373,
+    hover_1: 8px 10px 9px $seventhClr,
+);
 
 // Animations & Keyframes
 @keyframes fadeInAnimation { 
@@ -109,7 +117,6 @@ $imgRestaurant: (width: 100px, height: 50px);
     position: relative;
     z-index: 9999;
     margin: 0;
-        
         &__arrow{
             font-size: 2em;
             color: $seventhClr;
@@ -158,12 +165,34 @@ $imgRestaurant: (width: 100px, height: 50px);
             input{
                 border-radius: $borderRad;
                 padding: $padding;
-                background-color: $ninthClr;
-                box-shadow: 5px 5px 5px 0px $ninthClr;
-                background: linear-gradient(180deg, rgba(238,118,207,1) 0%, rgba(223,113,207,1) 50%, rgba(144,88,208,1) 100%);               font-size: 1.3em;
+                background: linear-gradient( to top, $color-primary, $color-secondary);
                 color: #fff;
+                box-shadow: map-get($shadow, hover);
+                font-size: 1.3em;
                 padding: 10px 20px;
                 cursor: pointer;
+                &:hover{
+                    box-shadow: map-get($shadow, hover_1);
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+                &::after {
+                    $color-primary-hover: lighten($color-primary, 3%);
+                    $color-secondary-hover: lighten($color-secondary, 3%);
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: linear-gradient( to top, $color-primary-hover, $color-secondary-hover);
+                    opacity: 0;
+                    z-index: -1;
+                    transition: opacity 500ms;
+                    border-radius: 10rem;
+                }
             }
         }
     }
@@ -180,7 +209,6 @@ $imgRestaurant: (width: 100px, height: 50px);
                 margin: 0;
 
             }
-
             &--numero{
             border: 1px solid black;
             }
@@ -498,16 +526,39 @@ $imgRestaurant: (width: 100px, height: 50px);
         padding: 20px;
         text-align: center;
         input{
-            border-radius: $borderRad;
-            padding: $padding;
-            background-color: $ninthClr;
-            box-shadow: 5px 5px 5px 0px $ninthClr;
-            background: linear-gradient(180deg, rgba(238,118,207,1) 0%, rgba(223,113,207,1) 50%, rgba(144,88,208,1) 100%);               font-size: 1.3em;
-            color: #fff;
-            padding: 10px 20px;
-            cursor: pointer;
+                border-radius: $borderRad;
+                padding: $padding;
+                background: linear-gradient( to top, $color-primary, $color-secondary);
+                color: #fff;
+                box-shadow: map-get($shadow, hover);
+                font-size: 1.3em;
+                padding: 10px 20px;
+                cursor: pointer;
+                &:hover{
+                    box-shadow: map-get($shadow, hover_1);
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+                &::after {
+                    $color-primary-hover: lighten($color-primary, 3%);
+                    $color-secondary-hover: lighten($color-secondary, 3%);
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: linear-gradient( to top, $color-primary-hover, $color-secondary-hover);
+                    opacity: 0;
+                    z-index: -1;
+                    transition: opacity 500ms;
+                    border-radius: 10rem;
+                }
+            }
         }
-    }
+    
 
 // Footer
 footer{
