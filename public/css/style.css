@@ -300,7 +300,9 @@
 
 .menu {
   width: 100%;
-  height: 1000px;
+  height: 1097px;
+  background-color: red;
+  margin-bottom: 0;
 }
 .menu .banniereRestaurant {
   max-width: 100%;
@@ -480,7 +482,6 @@ footer {
   width: auto;
   height: auto;
   padding: 5px;
-  position: relative;
 }
 footer h2 {
   font-family: "Shrikhand", cursive;
