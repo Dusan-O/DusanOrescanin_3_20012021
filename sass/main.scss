@@ -62,7 +62,7 @@ $shadow : (
 
 @keyframes rotate {
     0%   {
-        transform: rotate(180deg);
+        transform: rotate(360deg);
     }
     100% {
         transform: rotate(0deg);
@@ -457,9 +457,9 @@ $shadow : (
             .row-plat{
                 animation: fadeInAnimation ease-in-out 2s;
                 animation-iteration-count: 1;
-                animation-fill-mode: forwards;
+                animation-fill-mode: both;
                 margin: 1em;
-                i{
+                .rotation{
                     position: absolute;
                     height: 100%;
                     font-size: 2em;
@@ -471,22 +471,31 @@ $shadow : (
                     color: white;
                     right: -5em;
                     transition: 0.5s;
+                    .far{
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 500;
+                        content: "";
+                        font-size: 1em;
+                        color: white;
+                        animation-name: rotate;
+                        animation-duration: 1500ms;
+                        animation-iteration-count: 1;
+                        animation-timing-function: linear;
+                       
+                    }
+
                     
                     }
 
-                :hover > .far { // issue rotation check circle
+                :hover > .rotation { // issue rotation check circle
                     right: 0; 
-                    animation-name: rotate;
-                    animation-duration: 1000ms;
-                    animation-iteration-count: infinite;
-                    animation-timing-function: linear;                   
+                       
                     }  
                 label{
                 transition:0.2s;
                 background: #fff;
                 border-radius: 10px;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-
                 }
                 :hover + label {
                     background:#fff;
@@ -516,8 +525,7 @@ $shadow : (
                     font-weight: bold;
                     position: absolute;
                     right: 15px; 
-                }
-               
+                }              
             }
             .row-plat1{
                 animation: fadeInAnimation ease-in-out 1s;

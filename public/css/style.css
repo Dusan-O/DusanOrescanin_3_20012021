@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -30,7 +31,7 @@
 }
 @keyframes rotate {
   0% {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
   100% {
     transform: rotate(0deg);
@@ -416,10 +417,10 @@
 .choice .row-plat {
   animation: fadeInAnimation ease-in-out 2s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
   margin: 1em;
 }
-.choice .row-plat i {
+.choice .row-plat .rotation {
   position: absolute;
   height: 100%;
   font-size: 2em;
@@ -432,12 +433,19 @@
   right: -5em;
   transition: 0.5s;
 }
-.choice .row-plat :hover > .far {
-  right: 0;
+.choice .row-plat .rotation .far {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 500;
+  content: "";
+  font-size: 1em;
+  color: white;
   animation-name: rotate;
-  animation-duration: 1000ms;
-  animation-iteration-count: infinite;
+  animation-duration: 1500ms;
+  animation-iteration-count: 1;
   animation-timing-function: linear;
+}
+.choice .row-plat :hover > .rotation {
+  right: 0;
 }
 .choice .row-plat label {
   transition: 0.2s;
