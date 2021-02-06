@@ -60,12 +60,12 @@ $shadow : (
   }
 }
 
-@keyframes spin {
+@keyframes rotate {
     0%   {
-        transform: rotate(0deg);
+        transform: rotate(180deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(0deg);
     }
 }
 
@@ -471,16 +471,15 @@ $shadow : (
                     color: white;
                     right: -5em;
                     transition: 0.5s;
-                   // i + .far{ 
-                   // animation-name: spin;
-                   //  animation-duration: 5000ms;
-                   //  animation-iteration-count: infinite;
-                   //  animation-timing-function: linear; 
-              //  }
+                    
                     }
 
-                :hover > .far { 
-                    right: 0;                 
+                :hover > .far { // issue rotation check circle
+                    right: 0; 
+                    animation-name: rotate;
+                    animation-duration: 1000ms;
+                    animation-iteration-count: infinite;
+                    animation-timing-function: linear;                   
                     }  
                 label{
                 transition:0.2s;

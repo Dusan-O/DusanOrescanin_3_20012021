@@ -28,12 +28,12 @@
     box-shadow: 0 2.5em 0 0;
   }
 }
-@keyframes spin {
+@keyframes rotate {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(180deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
 }
 * {
@@ -434,6 +434,10 @@
 }
 .choice .row-plat :hover > .far {
   right: 0;
+  animation-name: rotate;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .choice .row-plat label {
   transition: 0.2s;
