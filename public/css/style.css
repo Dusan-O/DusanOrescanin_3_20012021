@@ -19,6 +19,7 @@
 
 .loading {
   background-color: #eaeaea;
+  opacity: 0.8;
   position: fixed;
   top: 0;
   left: 0;
@@ -28,7 +29,6 @@
   animation: loading 400ms 3s;
   animation-fill-mode: both;
   z-index: 10000;
-  opacity: 0.8;
 }
 .loading .loader, .loading .loader:before, .loading .loader:after {
   border-radius: 50%;
