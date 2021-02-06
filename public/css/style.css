@@ -439,7 +439,7 @@
 .choice .row-plat .barre-menu2 {
   display: flex;
   margin: 1em;
-  padding: 1em 6em 1em 2em;
+  padding: 1em 6em 1em 1em;
   align-items: center;
   position: relative;
   overflow: hidden;
