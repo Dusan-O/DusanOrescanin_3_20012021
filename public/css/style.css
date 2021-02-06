@@ -28,6 +28,14 @@
     box-shadow: 0 2.5em 0 0;
   }
 }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   margin: 0px;
@@ -411,7 +419,7 @@
   animation-fill-mode: forwards;
   margin: 1em;
 }
-.choice .row-plat .far {
+.choice .row-plat i {
   position: absolute;
   height: 100%;
   font-size: 2em;
@@ -443,6 +451,7 @@
   align-items: center;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 .choice .row-plat .hidden {
   position: absolute;

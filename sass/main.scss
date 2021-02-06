@@ -60,6 +60,15 @@ $shadow : (
   }
 }
 
+@keyframes spin {
+    0%   {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 // Général
 *{
     font-family: 'Roboto', sans-serif;
@@ -450,8 +459,7 @@ $shadow : (
                 animation-iteration-count: 1;
                 animation-fill-mode: forwards;
                 margin: 1em;
-                
-                .far {
+                i{
                     position: absolute;
                     height: 100%;
                     font-size: 2em;
@@ -463,6 +471,12 @@ $shadow : (
                     color: white;
                     right: -5em;
                     transition: 0.5s;
+                   // i + .far{ 
+                   // animation-name: spin;
+                   //  animation-duration: 5000ms;
+                   //  animation-iteration-count: infinite;
+                   //  animation-timing-function: linear; 
+              //  }
                     }
 
                 :hover > .far { 
@@ -485,6 +499,7 @@ $shadow : (
                     align-items: center;
                     position: relative;
                     overflow: hidden; 
+                    cursor: pointer;
                 }
                 .hidden {
                     position: absolute;
@@ -503,6 +518,7 @@ $shadow : (
                     position: absolute;
                     right: 15px; 
                 }
+               
             }
             .row-plat1{
                 animation: fadeInAnimation ease-in-out 1s;
