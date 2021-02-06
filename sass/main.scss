@@ -61,11 +61,11 @@ $shadow : (
 }
 
 @keyframes rotate {
-    0%   {
-        transform: rotate(360deg);
-    }
-    100% {
+    from   {
         transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
     }
 }
 
@@ -478,18 +478,15 @@ $shadow : (
                         font-size: 1em;
                         color: white;
                         animation-name: rotate;
-                        animation-duration: 1500ms;
-                        animation-iteration-count: 1;
+                        animation-duration: 1000ms;
+                        animation-iteration-count: infinite;
                         animation-timing-function: linear;
-                       
-                    }
+                        animation-fill-mode: both;
 
-                    
                     }
-
+                    }
                 :hover > .rotation { // issue rotation check circle
-                    right: 0; 
-                       
+                    right: 0;  
                     }  
                 label{
                 transition:0.2s;
