@@ -1,0 +1,26 @@
+footer{
+    background-color: $seventhClr;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    padding-top: 10px;
+    z-index: 1;
+
+
+  
+    h2{
+        font-family: 'Shrikhand', cursive;
+        font-size: 1.3em;
+        color: $quartClr;
+        font-weight: lighter; 
+        padding-left: 10%;
+    }
+    ul{
+        list-style-type: none;
+        padding-left: 10%;
+    }
+    a{
+        color: $quartClr;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,132 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 20%;
+    .location{
+        width: auto;
+        height: 50px;
+        padding: 10px;
+        background-color: $eightClr;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            &__texte{
+                margin-left: 20px;
+                font-weight: bold;
+                font-size: 1.4em;
+            }
+    }
+    .description{
+        width: 100%;
+        height: auto;
+        background-color: $quintClr;
+        text-align: center;
+        padding-bottom: 20px;
+        &__titre{
+            font-size: $fontSizeMain;
+            padding: 20px 0 10px 0;
+        }
+        &__boutton{
+            padding: 20px ;
+            input{
+                border-radius: $borderRad;
+                padding: $padding;
+                background: linear-gradient( to top, $color-primary, $color-secondary);
+                color: #fff;
+                box-shadow: map-get($shadow, hover);
+                font-size: 1.3em;
+                padding: 10px 20px;
+                cursor: pointer;
+                &:hover{
+                    box-shadow: map-get($shadow, hover_1);
+
+                    &::after {
+                        opacity: 1;
+                    }
+                }
+                &::after {
+                    $color-primary-hover: lighten($color-primary, 3%);
+                    $color-secondary-hover: lighten($color-secondary, 3%);
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    background: linear-gradient( to top, $color-primary-hover, $color-secondary-hover);
+                    opacity: 0;
+                    z-index: -1;
+                    transition: opacity 500ms;
+                    border-radius: 10rem;
+                }
+            }
+        }
+    }
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        &__fonctionnement{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding-left: 9%;
+            width: 50%;
+            @media (max-width: 533px){
+                margin: 0;
+
+            }
+            &--numero{
+            border: 1px solid black;
+            }
+            }
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 88%;
+            margin: 0 4%;
+            @media (max-width: 533px){
+                margin: auto;
+            }
+            li{
+                text-align:center;
+                list-style-type: none;
+                border-radius: 20px;
+                padding: 20px 180px 20px 20px;
+                margin: 3% 0;
+                font-size: 1em;
+                box-shadow: 5px 5px 5px 0px $eightClr;
+                background-color: $quintClr;
+                @media (max-width: 533px){
+                    font-size: 0.8em;
+                    padding-right: 120px;
+                }
+                @media (max-width: 320px){
+                    font-size: 0.7em;
+                    padding-right: 100px;
+                }
+                
+                &:hover{
+                    background-color: $sixtClr;
+                    .fas{
+                        color: $primClr;
+                    }
+                }
+                .numero{
+                    padding: 1px 6px;
+                    border-radius: 45px 45px;
+                    margin-left: 1px;
+                    background-color: $primClr;
+                    color: #fff;
+                    position: relative;
+                    right: 30px;
+
+                }
+            }
+        }
+
+    }
+}
