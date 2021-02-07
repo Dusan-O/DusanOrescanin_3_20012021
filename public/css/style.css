@@ -121,6 +121,7 @@
   align-items: center;
 }
 .main .location__texte {
+  margin-left: 20px;
   font-weight: bold;
   font-size: 1.4em;
 }
@@ -436,7 +437,7 @@
   vertical-align: sub;
   font-size: 1em;
   color: white;
-  animation: rotate-center 0.6s ease-in-out 5 both;
+  animation: rotate-center 0.6s ease-in-out infinite forwards;
 }
 .choice .row-plat :hover > .rotation {
   right: 0;
