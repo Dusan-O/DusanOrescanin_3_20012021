@@ -441,7 +441,7 @@
   color: white;
   animation-name: rotate;
   animation-duration: 500ms;
-  animation-iteration-count: 1;
+  animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-fill-mode: both;
 }
