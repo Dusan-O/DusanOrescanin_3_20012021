@@ -76,6 +76,10 @@ $shadow : (
     margin: 0px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
 // Loading spinner
 .loading{
     background-color: $eightClr;
