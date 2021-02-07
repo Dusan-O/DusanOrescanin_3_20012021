@@ -466,6 +466,10 @@ a{
                 animation-iteration-count: 1;
                 animation-fill-mode: both;
                 margin: 1em;
+                :hover > .col-plat-3{
+                    transform: translateX(-200%);
+                    transition: transform 300ms;
+                }
                 .rotation{
                     position: absolute;
                     height: 100%;
@@ -484,20 +488,22 @@ a{
                         color: white;
                         // issue rotation check circle
                         animation: rotate-center 0.6s ease-in-out infinite forwards;
-                        // issue rotation check circle
+                        // issue rotation check circle    
                     }
                     }
+            
                 :hover > .rotation { 
-                    right: 0;  
+                    right: 0; 
                     }  
                 label{
                 transition:0.2s;
                 background: #fff;
+                
                 border-radius: 10px;
                 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
                 }
                 :hover + label {
-                    background:#fff;
+                    background:#fff;    
                 }
                 .barre-menu2 {
                     display: flex;
@@ -514,6 +520,7 @@ a{
                 }
                 .col-plat-1{
                     font-weight: bold;
+                    
                 }
                 .col-plat-2{
                     font-weight: lighter;
@@ -523,10 +530,7 @@ a{
                 .col-plat-3{
                     font-weight: bold;
                     position: absolute;
-                    right: 15px; 
-                    &:hover{
-                        transform: translateX(-100%);
-                    }
+                    right: 15px;   
                 }              
             }
             .row-plat1{

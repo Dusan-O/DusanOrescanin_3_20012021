@@ -426,6 +426,10 @@ a {
   animation-fill-mode: both;
   margin: 1em;
 }
+.choice .row-plat :hover > .col-plat-3 {
+  transform: translateX(-200%);
+  transition: transform 300ms;
+}
 .choice .row-plat .rotation {
   position: absolute;
   height: 100%;
@@ -482,9 +486,6 @@ a {
   font-weight: bold;
   position: absolute;
   right: 15px;
-}
-.choice .row-plat .col-plat-3:hover {
-  transform: translateX(-100%);
 }
 .choice .row-plat1 {
   animation: fadeInAnimation ease-in-out 1s;
