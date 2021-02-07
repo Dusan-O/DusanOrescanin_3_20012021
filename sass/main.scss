@@ -477,7 +477,7 @@ $shadow : (
                         font-size: 1em;
                         color: white;
                         // issue rotation check circle
-                        animation: rotate-center 0.6s ease-in-out infinite both;
+                        animation: rotate-center 0.6s ease-in-out 5 both;
                         // issue rotation check circle
 
                     }
