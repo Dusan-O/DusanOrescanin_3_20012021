@@ -416,10 +416,12 @@ footer a {
   vertical-align: sub;
   font-size: 1em;
   color: white;
-  animation: rotate-center 0.6s ease-in-out 1 forwards;
 }
 .choice .row-plat :hover > .rotation {
   right: 0;
+}
+.choice .row-plat :hover .far {
+  animation: rotate-center 0.6s ease-in-out 1 forwards;
 }
 .choice .row-plat label {
   transition: 0.2s;

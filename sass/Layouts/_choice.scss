@@ -47,14 +47,16 @@
                 font-size: 1em;
                 color: white;
                 // issue rotation check circle
-                animation: rotate-center 0.6s ease-in-out 1 forwards;
-                // issue rotation check circle    
             }
             }
     
         :hover > .rotation { 
             right: 0; 
+
             }  
+        :hover .far{
+            animation: rotate-center 0.6s ease-in-out 1 forwards;
+        }
         label{
         transition:0.2s;
         background: #fff;
