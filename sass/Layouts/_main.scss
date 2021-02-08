@@ -6,7 +6,7 @@
     .location{
         width: auto;
         height: 50px;
-        padding: map-get($padding, padding10px );
+        padding: map-get($padding, padding10px);
         background-color: $eightClr;
         z-index: 1;
         display: flex;
@@ -23,21 +23,21 @@
         height: auto;
         background-color: $quintClr;
         text-align: $center;
-        padding-bottom: 20px;
+        padding-bottom: map-get($padding, padding20px);
         &__titre{
             font-size: $fontSizeMain;
             padding: 20px 0 10px 0;
         }
         &__boutton{
-            padding: 20px ;
+            padding: map-get($padding, padding20px);
             input{
                 border-radius: $borderRad;
-                padding: $padding;
+                padding: map-get($padding, padding15px);
                 background: linear-gradient( to top, $primClr, $secndClr);
                 color: $tenthClr;
                 box-shadow: map-get($shadow, hover);
                 font-size: 1.3em;
-                padding: 10px 20px;
+                padding: map-get($padding, padding);
                 cursor: pointer;
                 &:hover{
                     box-shadow: map-get($shadow, hover_1);
@@ -66,7 +66,7 @@
     .navBar{
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: map-get($padding, padding20px);
         &__fonctionnement{
             font-size: 1.5em;
             font-weight: bold;
@@ -74,7 +74,6 @@
             width: 50%;
             @media (max-width: 533px){
                 margin: 0;
-
             }
             &--numero{
             border: 1px solid black;
