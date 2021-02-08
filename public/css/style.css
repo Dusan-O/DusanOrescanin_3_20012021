@@ -421,7 +421,7 @@ footer a {
 }
 .choice .row-plat :hover .col-plat-3 {
   transform: translateX(-200%);
-  transition: transform 300ms;
+  transition: transform 600ms;
 }
 .choice .row-plat label {
   transition: 0.2s;
@@ -435,7 +435,7 @@ footer a {
 .choice .row-plat .barre-menu2 {
   display: flex;
   margin: 1em;
-  padding: 1em 6em 1em 0.5em;
+  padding: 1em 7em 1em 0.5em;
   align-items: center;
   position: relative;
   overflow: hidden;
