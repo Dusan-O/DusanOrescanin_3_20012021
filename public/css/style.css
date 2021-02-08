@@ -30,7 +30,7 @@
 }
 @keyframes rotate-center {
   0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
   100% {
     transform: rotate(360deg);
@@ -392,9 +392,7 @@ footer a {
   font-weight: bolder;
 }
 .choice .row-plat {
-  animation: fadeInAnimation ease-in-out 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: both;
+  animation: fadeInAnimation 2s ease-in-out 1 both;
   margin: 1em;
 }
 .choice .row-plat :hover > .col-plat-3 {
@@ -418,7 +416,7 @@ footer a {
   vertical-align: sub;
   font-size: 1em;
   color: white;
-  animation: rotate-center 0.6s ease-in-out infinite forwards;
+  animation: rotate-center 0.6s ease-in-out 1 forwards;
 }
 .choice .row-plat :hover > .rotation {
   right: 0;
