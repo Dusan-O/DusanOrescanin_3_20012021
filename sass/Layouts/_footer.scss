@@ -2,12 +2,9 @@ footer{
     background-color: $seventhClr;
     width: auto;
     height: auto;
-    padding: 5px;
+    padding: map-get($padding, padding5px);
     padding-top: map-get($padding, padding10px);
     z-index: 1;
-
-
-  
     h2{
         font-family: 'Shrikhand', cursive;
         font-size: 1.3em;

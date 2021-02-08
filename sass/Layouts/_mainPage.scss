@@ -30,7 +30,7 @@
             border-radius: $borderRadius;
             overflow: hidden;
             margin-bottom: 30px;
-            margin: 40px; 
+            margin: map-get($margin, margin40px);
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -50,7 +50,7 @@
                 height: 100px;
                 background: $tenthClr;
                 p{
-                    padding-left: 10px;
+                    padding-left: map-get($padding, padding10px);
                     font-size: 1em;
                 }
             }

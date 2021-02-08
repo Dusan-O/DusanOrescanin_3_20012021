@@ -8,12 +8,12 @@
     &__entree{
         h5{
             font-size: 1em;
-            margin: 2em;
+            margin: map-get($margin, margin2);
             text-transform: uppercase;
             line-height: 1px;
         }
         p{
-            margin: 2em;
+            margin: map-get($margin, margin2);
             line-height: 1px;
             color: #75e9d3;
             font-weight: bolder;
@@ -21,7 +21,7 @@
     }
     .row-plat{
         animation: fadeInAnimation 2s ease-in-out 1 both;
-        margin: 1em;    
+        margin: map-get($margin, margin); 
         @media (max-width: 533px){
             font-size:0.9em;
         }    
@@ -45,7 +45,6 @@
             }
         :hover > .rotation { 
             right: 0; 
-
             }  
         :hover .far{
             animation: rotate-center 0.6s ease-in-out 1 forwards;
@@ -65,7 +64,7 @@
         }
         .barre-menu2 {
             display: flex;
-            margin: 1em;
+            margin: map-get($margin, margin);
             padding: 1em 7em 1em 0.5em;
             align-items: $center;
             position: $relative;
