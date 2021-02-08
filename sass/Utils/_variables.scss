@@ -13,7 +13,6 @@ $tenthClr: #fff;
 $borderRad: 30px;
 $borderRadius: 10px;
 $border: 1px solid black;
-$fontSizeMain: 2em;
 $imgRestaurant: (width: 100px, height: 50px);
 $shadow: (
     hover: 8px 10px 9px #737373,
@@ -27,6 +26,7 @@ $padding: (
     padding20px: 20px,
     padding15px: 15px,
     padding10prct: 10%,
+    padding1em: 1em,
 );
 
 $margin: (
@@ -35,23 +35,25 @@ $margin: (
     margin20px: 20px,
     margin40px: 40px,
 );
-// check and add var margin, and create var borders, font-size and apply everything
+
 // check W3C validator
 // Change font size for the different meals for mobile
-
 
 $font-size: (
     font-size1: 1em,
     font-size2: 2em,
     font-size3: 1.3em,
     font-size4: 1.4em,
+    font-size5: 1.5em,
+    font-size08: 0.8em,
+    font-size07: 0.7em,
 );
 
+$position: (
+    relative: relative,
+    absolute: absolute,
+    fixed: fixed,
+);
 
-
-
-$relative: relative;
-
-$absolute: absolute;
 
 $center: center;

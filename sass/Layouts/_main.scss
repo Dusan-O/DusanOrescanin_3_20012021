@@ -25,7 +25,7 @@
         text-align: $center;
         padding-bottom: map-get($padding, padding20px);
         &__titre{
-            font-size: $fontSizeMain;
+            font-size: map-get($font-size, font-size2);
             padding: 20px 0 10px 0;
         }
         &__boutton{
@@ -36,7 +36,7 @@
                 background: linear-gradient( to top, $primClr, $secndClr);
                 color: $tenthClr;
                 box-shadow: map-get($shadow, hover);
-                font-size: 1.3em;
+                font-size: map-get($font-size, font-size3);
                 padding: map-get($padding, padding);
                 cursor: pointer;
                 &:hover{
@@ -49,7 +49,7 @@
                     $primClr-hover: lighten($primClr, 3%);
                     $secndClr-hover: lighten($secndClr, 3%);
                     content: "";
-                    position: $absolute;
+                    position: map-get($position, absolute);
                     top: 0;
                     right: 0;
                     bottom: 0;
@@ -99,11 +99,11 @@
                 box-shadow: 5px 5px 5px 0px $eightClr;
                 background-color: $quintClr;
                 @media (max-width: 533px){
-                    font-size: 0.8em;
+                    font-size: map-get($font-size, font-size08);
                     padding-right: 120px;
                 }
                 @media (max-width: 320px){
-                    font-size: 0.7em;
+                    font-size: map-get($font-size, font-size07);
                     padding-right: 100px;
                 }   
                 &:hover{
@@ -118,9 +118,8 @@
                     margin-left: 1px;
                     background-color: $primClr;
                     color: $tenthClr;
-                    position: $relative;
+                    position: map-get($position, relative);
                     right: 30px;
-
                 }
             }
         }

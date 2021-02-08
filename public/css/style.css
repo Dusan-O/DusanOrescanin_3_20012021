@@ -397,7 +397,7 @@ footer a {
   }
 }
 .choice .row-plat .rotation {
-  position: absolute;
+  position: relative;
   height: 100%;
   font-size: 2em;
   background: #75e9d3;
@@ -456,7 +456,7 @@ footer a {
 }
 .choice .row-plat .col-plat-3 {
   font-weight: bold;
-  position: absolute;
+  position: relative;
   right: 15px;
 }
 .choice .row-plat1 {

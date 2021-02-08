@@ -18,11 +18,11 @@
         justify-content: $center;
         align-items: $center;
         &__restaurants{
-            font-size: 1.5em;
-                font-weight: bold;
-                position: $relative;
-                bottom: 175px;
-                left: 170px;
+            font-size: map-get($font-size, font-size5);
+            font-weight: bold;
+            position: map-get($position, relative);
+            bottom: 175px;
+            left: 170px;
         }
         &__imgCard {
             width: 700px;
@@ -51,14 +51,14 @@
                 background: $tenthClr;
                 p{
                     padding-left: map-get($padding, padding10px);
-                    font-size: 1em;
+                    font-size: map-get($font-size, font-size1);
                 }
             }
             &--heart{
                 display: flex;
                 justify-content: space-between;
                 .far{
-                    font-size: 2em ;
+                    font-size: map-get($font-size, font-size2);
                     padding-right: map-get($padding, padding10px);
                     &:hover{
                         transform: scale(1.1);
@@ -79,13 +79,12 @@
                     margin-top: 0;
                     padding-top: 5px;
                     padding-left: map-get($padding, padding10px);
-                    font-size: 1.4em;
+                    font-size: map-get($font-size, font-size4);
                 }
             }
         }
     }
     
-
 .menu{
     width: 100%;
     height: auto;
@@ -97,7 +96,7 @@
             height: 600px;
             object-fit: cover;
             object-position: 50% 50%;
-            position: $absolute;
+            position: map-get($position, absolute);
             overflow: hidden;
             @media (max-width: 768px){
                  object-fit:cover;
@@ -105,7 +104,6 @@
              }
         }
     }
-    // Menus des restaurants
     .menu__restaurant{
         border-radius: 35px 35px 0 0;
         width: 80%;
@@ -114,7 +112,7 @@
         z-index: 1;
         display: flex;
         flex-direction: column;
-        position: $relative;
+        position: map-get($position, relative);;
         bottom: 0px;
         background-color: $quintClr;
         @media (max-width: 768px){
@@ -123,14 +121,14 @@
         }
         h1{
             text-align: left;
-            font-size: 1.5em;
+            font-size: map-get($font-size, font-size5);
             font-family: 'Shrikhand', cursive;
             padding-left: 20px;
             display: flex;
             justify-content: space-between;
             padding-top: map-get($padding, padding15px);
             .far{
-                font-size: 1.5em;
+                font-size: map-get($font-size, font-size5);
                 padding-right: map-get($padding, padding20px);
                 &:hover{
                     transform: scale(1.1);

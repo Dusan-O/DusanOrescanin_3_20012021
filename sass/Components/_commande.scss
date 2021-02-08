@@ -7,7 +7,7 @@
             background: linear-gradient( to top, $primClr, $secndClr);
             color: $tenthClr;
             box-shadow: map-get($shadow, hover);
-            font-size: 1.3em;
+            font-size: map-get($font-size, font-size3);
             padding: map-get($padding, padding);
             cursor: pointer;
             &:hover{
@@ -20,7 +20,7 @@
                 $primClr-hover: lighten($primClr, 3%);
                 $secndClr-hover: lighten($secndClr, 3%);
                 content: "";
-                position: $absolute;
+                position: map-get($position, absolute);
                 top: 0;
                 right: 0;
                 bottom: 0;

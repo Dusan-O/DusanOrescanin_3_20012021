@@ -4,10 +4,10 @@
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 1em;
+    margin: map-get($margin, margin);
     &__entree{
         h5{
-            font-size: 1em;
+            font-size: map-get($font-size, font-size1);
             margin: map-get($margin, margin2);
             text-transform: uppercase;
             line-height: 1px;
@@ -26,9 +26,9 @@
             font-size:0.9em;
         }    
         .rotation{
-            position: $absolute;
+            position: map-get($position, relative);
             height: 100%;
-            font-size: 2em;
+            font-size: map-get($font-size, font-size2);
             background: #75e9d3;
             width: 2em;
             text-align: $center;
@@ -39,7 +39,7 @@
             transition: 0.5s;
             .far{
                 vertical-align: sub;
-                font-size: 1em;
+                font-size: map-get($font-size, font-size1);
                 color: $tenthClr;
             }
             }
@@ -67,12 +67,12 @@
             margin: map-get($margin, margin);
             padding: 1em 7em 1em 0.5em;
             align-items: $center;
-            position: $relative;
+            position: map-get($position, relative);;
             overflow: hidden; 
             cursor: pointer;
         }
         .hidden {
-            position: $absolute;
+            position: map-get($position, absolute);
             right: 100vw;
         }
         .col-plat-1{
@@ -85,7 +85,7 @@
         }
         .col-plat-3{
             font-weight: bold;
-            position: $absolute;
+            position: map-get($position, relative);
             right: 15px;   
         }              
     }

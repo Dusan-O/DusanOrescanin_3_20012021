@@ -7,7 +7,7 @@ footer{
     z-index: 1;
     h2{
         font-family: 'Shrikhand', cursive;
-        font-size: 1.3em;
+        font-size: map-get($font-size, font-size3);
         color: $quartClr;
         font-weight: lighter; 
         padding-left: map-get($padding, padding10prct);

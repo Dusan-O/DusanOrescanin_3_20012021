@@ -1,18 +1,18 @@
 .header{
-    padding: 1em;
+    padding: map-get($padding, padding1em);
     box-shadow: 0 0 1em rgba(0,0,0,.25);
-    position: $relative;
+    position: map-get($position, relative);
     z-index: 9999;
     margin: 0;
         &__arrow{
-            font-size: 2em;
+            font-size: map-get($font-size, font-size2);
             color: $seventhClr;
-            position: $absolute;
+            position: map-get($position, absolute);
         }
         &__logo{
         font-family: 'Shrikhand', cursive;
         font-size: 2em;
-        text-align: center;
+        text-align: $center;
         color: $seventhClr;
         font-weight: lighter;
         }
