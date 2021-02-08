@@ -22,7 +22,11 @@
     }
     .row-plat{
         animation: fadeInAnimation 2s ease-in-out 1 both;
-        margin: 1em;        
+        margin: 1em;    
+        @media (max-width: 533px){
+            font-size:0.9em;
+
+        }    
         .rotation{
             position: $absolute;
             height: 100%;
