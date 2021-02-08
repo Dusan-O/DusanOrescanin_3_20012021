@@ -25,11 +25,7 @@
         animation: fadeInAnimation 2s ease-in-out 1 both;
         margin: 1em;
         // issue, the price is only moving when hover on .col-plat-2
-        :hover > .col-plat-3{
-            transform: translateX(-200%);
-            transition: transform 300ms;
-        // issue, the price is only moving when hover on .col-plat-2
-        }
+        
         .rotation{
             position: absolute;
             height: 100%;
@@ -46,16 +42,19 @@
                 vertical-align: sub;
                 font-size: 1em;
                 color: white;
-                // issue rotation check circle
             }
             }
-    
         :hover > .rotation { 
             right: 0; 
 
             }  
         :hover .far{
             animation: rotate-center 0.6s ease-in-out 1 forwards;
+        }
+        :hover .col-plat-3{
+            transform: translateX(-200%);
+            transition: transform 300ms;
+        // issue, the price is only moving when hover on .col-plat-2
         }
         label{
         transition:0.2s;

@@ -395,10 +395,6 @@ footer a {
   animation: fadeInAnimation 2s ease-in-out 1 both;
   margin: 1em;
 }
-.choice .row-plat :hover > .col-plat-3 {
-  transform: translateX(-200%);
-  transition: transform 300ms;
-}
 .choice .row-plat .rotation {
   position: absolute;
   height: 100%;
@@ -422,6 +418,10 @@ footer a {
 }
 .choice .row-plat :hover .far {
   animation: rotate-center 0.6s ease-in-out 1 forwards;
+}
+.choice .row-plat :hover .col-plat-3 {
+  transform: translateX(-200%);
+  transition: transform 300ms;
 }
 .choice .row-plat label {
   transition: 0.2s;
