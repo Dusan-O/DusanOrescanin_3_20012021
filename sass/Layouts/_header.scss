@@ -1,13 +1,13 @@
 .header{
     padding: 1em;
     box-shadow: 0 0 1em rgba(0,0,0,.25);
-    position: relative;
+    position: $relative;
     z-index: 9999;
     margin: 0;
         &__arrow{
             font-size: 2em;
             color: $seventhClr;
-            position: absolute;
+            position: $absolute;
         }
         &__logo{
         font-family: 'Shrikhand', cursive;

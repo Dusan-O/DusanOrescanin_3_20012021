@@ -15,12 +15,12 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: $center;
+        align-items: $center;
         &__restaurants{
             font-size: 1.5em;
                 font-weight: bold;
-                position: relative;
+                position: $relative;
                 bottom: 175px;
                 left: 170px;
         }
@@ -43,12 +43,12 @@
                 width: 100%;
                 height: 200px;
                 overflow: hidden;
-                object-fit:cover;
+                object-fit: cover;
             }
             &--txt{
                 width: 100%;
                 height: 100px;
-                background: #fff;
+                background: $tenthClr;
                 p{
                     padding-left: 10px;
                     font-size: 1em;
@@ -62,9 +62,7 @@
                     padding-right: 10px;
                     &:hover{
                         transform: scale(1.1);
-                        animation-name: heart;
-                        animation-duration: 500ms;
-                        animation-fill-mode: forwards;
+                        animation: heart 500ms forwards;
                         font-weight: 700;
                         }
                     &:before {
@@ -100,7 +98,7 @@
             height: 600px;
             object-fit: cover;
             object-position: 50% 50%;
-            position:absolute;
+            position: $absolute;
             overflow: hidden;
             @media (max-width: 768px){
                  object-fit:cover;
@@ -117,7 +115,7 @@
         z-index: 1;
         display: flex;
         flex-direction: column;
-        position: relative;
+        position: $relative;
         bottom: 0px;
         background-color: $quintClr;
         @media (max-width: 768px){
@@ -138,9 +136,7 @@
                 padding-right: 20px;
                 &:hover{
                     transform: scale(1.1);
-                    animation-name: heart;
-                    animation-duration: 500ms;
-                    animation-fill-mode: forwards;
+                    animation: heart 500ms forwards;
                     font-weight: 700;
                     }
                 &:before {

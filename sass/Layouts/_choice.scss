@@ -12,7 +12,6 @@
             margin: 2em;
             text-transform: uppercase;
             line-height: 1px;
-
         }
         p{
             margin: 2em;
@@ -25,21 +24,21 @@
         animation: fadeInAnimation 2s ease-in-out 1 both;
         margin: 1em;        
         .rotation{
-            position: absolute;
+            position: $absolute;
             height: 100%;
             font-size: 2em;
             background: #75e9d3;
             width: 2em;
-            text-align: center;
+            text-align: $center;
             line-height: 2em;
             border-radius: 0 10px 10px 0;
-            color: white;
+            color: $tenthClr;
             right: -5em;
             transition: 0.5s;
             .far{
                 vertical-align: sub;
                 font-size: 1em;
-                color: white;
+                color: $tenthClr;
             }
             }
         :hover > .rotation { 
@@ -55,30 +54,29 @@
         }
         label{
         transition:0.2s;
-        background: #fff;
+        background: $tenthClr;
         
         border-radius: 10px;
         box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
         :hover + label {
-            background:#fff;    
+            background:$tenthClr;    
         }
         .barre-menu2 {
             display: flex;
             margin: 1em;
             padding: 1em 7em 1em 0.5em;
-            align-items: center;
-            position: relative;
+            align-items: $center;
+            position: $relative;
             overflow: hidden; 
             cursor: pointer;
         }
         .hidden {
-            position: absolute;
+            position: $absolute;
             right: 100vw;
         }
         .col-plat-1{
-            font-weight: bold;
-            
+            font-weight: bold;  
         }
         .col-plat-2{
             font-weight: lighter;
@@ -87,24 +85,20 @@
         }
         .col-plat-3{
             font-weight: bold;
-            position: absolute;
+            position: $absolute;
             right: 15px;   
         }              
     }
     .row-plat1{
-        animation: fadeInAnimation ease-in-out 1s;
-        animation-fill-mode: forwards;
+        animation: fadeInAnimation ease-in-out 2s forwards;
     }
     .row-plat2{
-        animation: fadeInAnimation ease-in-out 2s;
-        animation-fill-mode: forwards;
+        animation: fadeInAnimation ease-in-out 3s forwards;
     }
     .row-plat3{
-        animation: fadeInAnimation ease-in-out 3s;
-        animation-fill-mode: forwards;
+        animation: fadeInAnimation ease-in-out 4s forwards;
     }
     .row-plat4{
-        animation: fadeInAnimation ease-in-out 4s;
-        animation-fill-mode: forwards;
+        animation: fadeInAnimation ease-in-out 5s forwards;
     }
 }

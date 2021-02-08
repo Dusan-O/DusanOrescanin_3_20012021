@@ -7,17 +7,47 @@ $sixtClr: #f5edff;
 $seventhClr: #353535;
 $eightClr: #eaeaea;
 $ninthClr: #de6eda;
-$color-primary: #9356dc;
-$color-secondary: #ff79da;
-$color-tertiary : #99e2d0;
+$tenthClr: #fff;
+
+
 $borderRad: 30px;
 $borderRadius: 10px;
 $border: 1px solid black;
 $fontSizeMain: 2em;
 $padding: 15px;
 $imgRestaurant: (width: 100px, height: 50px);
-
-$shadow : (
+$shadow: (
     hover: 8px 10px 9px #737373,
     hover_1: 8px 10px 9px $seventhClr,
 );
+
+$padding: (
+    padding: 10px 20px,
+    padding10px: 10px,
+    padding20px: 20px,
+    Padding: 10px 20px,
+);
+
+$margin: (
+    margin: 1em,
+    margin2: 2em,
+    margin20px: 20px,
+);
+// check and add var for padding, margin, and create var borders, font-size and apply everything
+
+
+$font-size: (
+    font-size1: 1em,
+    font-size2: 2em,
+    font-size1.3: 1.3em,
+    font-size1.4: 1.4em,
+)
+
+
+
+
+$relative: relative;
+
+$absolute: absolute;
+
+$center: center;

@@ -1,33 +1,32 @@
 .commande{
     padding: 20px;
-    text-align: center;
+    text-align: $center;
     input{
             border-radius: $borderRad;
             padding: $padding;
-            background: linear-gradient( to top, $color-primary, $color-secondary);
-            color: #fff;
+            background: linear-gradient( to top, $primClr, $secndClr);
+            color: $tenthClr;
             box-shadow: map-get($shadow, hover);
             font-size: 1.3em;
             padding: 10px 20px;
             cursor: pointer;
             &:hover{
                 box-shadow: map-get($shadow, hover_1);
-
                 &::after {
                     opacity: 1;
                 }
             }
             &::after {
-                $color-primary-hover: lighten($color-primary, 3%);
-                $color-secondary-hover: lighten($color-secondary, 3%);
+                $primClr-hover: lighten($primClr, 3%);
+                $secndClr-hover: lighten($secndClr, 3%);
                 content: "";
-                position: absolute;
+                position: $absolute;
                 top: 0;
                 right: 0;
                 bottom: 0;
                 left: 0;
-                background: linear-gradient( to top, $color-primary-hover, $color-secondary-hover);
-                opacity: 0;
+                background: linear-gradient( to top, $primClr-hover, $secndClr-hover);
+                opacity: 0; 
                 z-index: -1;
                 transition: opacity 500ms;
                 border-radius: 10rem;
