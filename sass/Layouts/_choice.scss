@@ -26,7 +26,7 @@
             font-size:0.9em;
         }    
         .rotation{
-            position: map-get($position, relative);
+            position: map-get($position, absolute);
             height: 100%;
             font-size: map-get($font-size, font-size2);
             background: #75e9d3;
@@ -85,7 +85,7 @@
         }
         .col-plat-3{
             font-weight: bold;
-            position: map-get($position, relative);
+            position: map-get($position, absolute);
             right: 15px;   
         }              
     }
