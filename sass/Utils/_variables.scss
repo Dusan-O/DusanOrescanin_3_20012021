@@ -2,20 +2,21 @@ $primClr: #9356DC;
 $secndClr: #FF79DA;
 $tertClr: #99E2D0;
 $quartClr: #f3f3f3;
-$quintClr: #f6f6f6;
+$quintClr: #b8aeae;
 $sixtClr: #f5edff;
 $seventhClr: #353535;
 $eightClr: #eaeaea;
 $ninthClr: #de6eda;
 $tenthClr: #fff;
+$eleventhClr: #f6f6f6;
 
 $borderRad: 30px;
 $borderRadius: 10px;
 $border: 1px solid black;
 $imgRestaurant: (width: 100px, height: 50px);
 $shadow: (
-    hover: 8px 10px 9px #737373,
-    hover_1: 8px 10px 9px $seventhClr,
+    hover: 5px 7px 6px #737373,
+    hover_1: 5px 7px 6px $seventhClr,
 );
 
 $padding: (
@@ -26,6 +27,7 @@ $padding: (
     padding15px: 15px,
     padding10prct: 10%,
     padding1em: 1em,
+    Padding: 20px 30px,
 );
 
 $margin: (
@@ -34,8 +36,6 @@ $margin: (
     margin20px: 20px,
     margin40px: 40px,
 );
-
-// check W3C validator
 
 $font-size: (
     font-size1: 1em,
@@ -52,6 +52,5 @@ $position: (
     absolute: absolute,
     fixed: fixed,
 );
-
 
 $center: center;

@@ -104,7 +104,7 @@ footer a {
 .main .description {
   width: 100%;
   height: auto;
-  background-color: #f6f6f6;
+  background-color: #b8aeae;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -117,16 +117,16 @@ footer a {
 }
 .main .description__boutton input {
   border-radius: 30px;
-  padding: 15px;
+  padding: 20px 30px;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   color: #fff;
-  box-shadow: 8px 10px 9px #737373;
+  box-shadow: 5px 7px 6px #737373;
   font-size: 1.3em;
-  padding: 10px 20px;
   cursor: pointer;
+  border: transparent;
 }
 .main .description__boutton input:hover {
-  box-shadow: 8px 10px 9px #353535;
+  box-shadow: 5px 7px 6px #353535;
 }
 .main .description__boutton input:hover::after {
   opacity: 1;
@@ -184,7 +184,7 @@ footer a {
   margin: 3% 0;
   font-size: 1em;
   box-shadow: 5px 5px 5px 0px #eaeaea;
-  background-color: #f6f6f6;
+  background-color: #b8aeae;
 }
 @media (max-width: 533px) {
   .main .navBar ul li {
@@ -218,7 +218,7 @@ footer a {
   display: flex;
   flex-direction: column;
   width: auto;
-  background-color: #f6f6f6;
+  background-color: #b8aeae;
   padding: 20px;
 }
 .mainPage__restaurants {
@@ -375,6 +375,9 @@ footer a {
   flex-wrap: wrap;
   margin: 1em;
 }
+.choice__entree {
+  width: 100%;
+}
 .choice__entree h5 {
   font-size: 1em;
   margin: 2em;
@@ -393,7 +396,17 @@ footer a {
 }
 @media (max-width: 533px) {
   .choice .row-plat {
-    font-size: 0.9em;
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 375px) {
+  .choice .row-plat {
+    font-size: 0.7em;
+  }
+}
+@media (max-width: 320px) {
+  .choice .row-plat {
+    font-size: 0.6em;
   }
 }
 .choice .row-plat .rotation {
@@ -533,13 +546,14 @@ a {
   padding: 15px;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   color: #fff;
-  box-shadow: 8px 10px 9px #737373;
+  box-shadow: 5px 7px 6px #737373;
   font-size: 1.3em;
   padding: 10px 20px;
   cursor: pointer;
+  border: transparent;
 }
 .commande input:hover {
-  box-shadow: 8px 10px 9px #353535;
+  box-shadow: 5px 7px 6px #353535;
 }
 .commande input:hover::after {
   opacity: 1;

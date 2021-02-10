@@ -84,7 +84,6 @@
             }
         }
     }
-    
 .menu{
     width: 100%;
     height: auto;
@@ -114,7 +113,7 @@
         flex-direction: column;
         position: map-get($position, relative);;
         bottom: 0px;
-        background-color: $quintClr;
+        background-color: $eleventhClr;
         @media (max-width: 768px){
             width: 100%;
             margin: 0;

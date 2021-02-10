@@ -10,6 +10,7 @@
             font-size: map-get($font-size, font-size3);
             padding: map-get($padding, padding);
             cursor: pointer;
+            border: transparent;
             &:hover{
                 box-shadow: map-get($shadow, hover_1);
                 &::after {

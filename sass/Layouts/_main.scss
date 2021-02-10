@@ -32,13 +32,13 @@
             padding: map-get($padding, padding20px);
             input{
                 border-radius: $borderRad;
-                padding: map-get($padding, padding15px);
+                padding: map-get($padding, Padding);
                 background: linear-gradient( to top, $primClr, $secndClr);
                 color: $tenthClr;
                 box-shadow: map-get($shadow, hover);
                 font-size: map-get($font-size, font-size3);
-                padding: map-get($padding, padding);
                 cursor: pointer;
+                border: transparent;
                 &:hover{
                     box-shadow: map-get($shadow, hover_1);
                     &::after {
