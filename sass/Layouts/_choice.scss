@@ -1,11 +1,12 @@
 .choice{
-    background-color: $quintClr;
+    background-color: $eleventhClr;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: map-get($margin, margin);
     &__entree{
+        width: 100%;
         h5{
             font-size: map-get($font-size, font-size1);
             margin: map-get($margin, margin2);
@@ -23,8 +24,14 @@
         animation: fadeInAnimation 2s ease-in-out 1 both;
         margin: map-get($margin, margin); 
         @media (max-width: 533px){
-            font-size:0.9em;
+            font-size:0.8em;
         }    
+        @media (max-width: 375px){
+            font-size: 0.7em;
+        }
+        @media (max-width: 320px){
+            font-size: 0.6em;
+        }
         .rotation{
             position: map-get($position, absolute);
             height: 100%;
