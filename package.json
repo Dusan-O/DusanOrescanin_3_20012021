@@ -4,7 +4,9 @@
   "description": "ohmyfood",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css -w --style nested"
+      "prefix": "postcss ./public/css/style.css --use autoprefixer -d./public/css/prefixed/"
+
   },
   "repository": {
     "type": "git",
@@ -12,6 +14,7 @@
   },
   "author": "Dusan",
   "license": "ISC",
+  "browserslist": "last 4 versions"
   "bugs": {
     "url": "https://github.com/Dusan-O/DusanOrescanin_3_20012021/issues"
   },
