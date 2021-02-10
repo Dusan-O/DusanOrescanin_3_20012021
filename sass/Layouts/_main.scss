@@ -21,7 +21,7 @@
     .description{
         width: 100%;
         height: auto;
-        background-color: $quintClr;
+        background-color: $eleventhClr;
         text-align: $center;
         padding-bottom: map-get($padding, padding20px);
         &__titre{
@@ -97,7 +97,7 @@
                 margin: 3% 0;
                 font-size: 1em;
                 box-shadow: 5px 5px 5px 0px $eightClr;
-                background-color: $quintClr;
+                background-color: $eleventhClr;
                 @media (max-width: 533px){
                     font-size: map-get($font-size, font-size08);
                     padding-right: 120px;

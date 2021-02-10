@@ -104,7 +104,7 @@ footer a {
 .main .description {
   width: 100%;
   height: auto;
-  background-color: #b8aeae;
+  background-color: #f6f6f6;
   text-align: center;
   padding-bottom: 20px;
 }
@@ -184,7 +184,7 @@ footer a {
   margin: 3% 0;
   font-size: 1em;
   box-shadow: 5px 5px 5px 0px #eaeaea;
-  background-color: #b8aeae;
+  background-color: #f6f6f6;
 }
 @media (max-width: 533px) {
   .main .navBar ul li {
@@ -218,7 +218,7 @@ footer a {
   display: flex;
   flex-direction: column;
   width: auto;
-  background-color: #b8aeae;
+  background-color: #f6f6f6;
   padding: 20px;
 }
 .mainPage__restaurants {
