@@ -1,5 +1,5 @@
 footer{
-    background-color: $seventhClr;
+    background-color: map-get($color, seventhClr);
     width: auto;
     height: auto;
     padding: map-get($padding, padding5px);
@@ -8,7 +8,7 @@ footer{
     h2{
         font-family: 'Shrikhand', cursive;
         font-size: map-get($font-size, font-size3);
-        color: $quartClr;
+        color: map-get($color, quartClr);
         font-weight: lighter; 
         padding-left: map-get($padding, padding10prct);
     }
@@ -17,7 +17,7 @@ footer{
         padding-left: map-get($padding, padding10prct);
     }
     a{
-        color: $quartClr;
+        color: map-get($color, quartClr);
         text-decoration: none;
     }
 }
