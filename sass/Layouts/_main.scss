@@ -6,7 +6,7 @@
         width: auto;
         height: 50px;
         padding: map-get($padding, padding10px);
-        background-color: $eightClr;
+        background-color: map-get($color, eightClr);
         z-index: 1;
         display: flex;
         justify-content: $center;
@@ -20,7 +20,7 @@
     .description{
         width: 100%;
         height: auto;
-        background-color: $eleventhClr;
+        background-color: map-get($color, eleventhClr);
         text-align: $center;
         padding-bottom: map-get($padding, padding20px);
         &__titre{
@@ -32,8 +32,8 @@
             input{
                 border-radius: $borderRad;
                 padding: map-get($padding, Padding);
-                background: linear-gradient( to top, $primClr, $secndClr);
-                color: $tenthClr;
+                background: linear-gradient( to top, primClr, secndClr);
+                color: map-get($color, tenthClr);
                 box-shadow: map-get($shadow, hover);
                 font-size: map-get($font-size, font-size3);
                 cursor: pointer;
@@ -45,15 +45,15 @@
                     }
                 }
                 &::after {
-                    $primClr-hover: lighten($primClr, 3%);
-                    $secndClr-hover: lighten($secndClr, 3%);
+                    $primClr-hover: lighten(primClr, 3%);
+                    $secndClr-hover: lighten(secndClr, 3%);
                     content: "";
                     position: map-get($position, absolute);
                     top: 0;
                     right: 0;
                     bottom: 0;
                     left: 0;
-                    background: linear-gradient( to top, $primClr-hover, $secndClr-hover);
+                    background: linear-gradient( to top, primClr-hover, secndClr-hover);
                     opacity: 0;
                     z-index: -1;
                     transition: opacity 500ms;
@@ -96,7 +96,7 @@
                 margin: 3% 0;
                 font-size: 1em;
                 box-shadow: 5px 5px 5px 0px $eightClr;
-                background-color: $eleventhClr;
+                background-color: map-get($color, eleventh);
                 @media (max-width: 533px){
                     font-size: map-get($font-size, font-size08);
                     padding-right: 120px;
@@ -106,17 +106,17 @@
                     padding-right: 100px;
                 }   
                 &:hover{
-                    background-color: $sixtClr;
+                    background-color: map-get($color, sixtClr);
                     .fas{
-                        color: $primClr;
+                        color: map-get($color, primClr);
                     }
                 }
                 .numero{
                     padding: 1px 6px;
                     border-radius: 45px 45px;
                     margin-left: 1px;
-                    background-color: $primClr;
-                    color: $tenthClr;
+                    background-color: map-get($color, primClr);
+                    color: map-get($color, tenthClr);
                     position: map-get($position, relative);
                     right: 30px;
                 }

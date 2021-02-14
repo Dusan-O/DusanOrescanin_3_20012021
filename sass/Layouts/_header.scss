@@ -6,14 +6,14 @@
     margin: 0;
         &__arrow{
             font-size: map-get($font-size, font-size2);
-            color: $seventhClr;
+            color: map-get($color, seventhClr);
             position: map-get($position, absolute);
         }
         &__logo{
         font-family: 'Shrikhand', cursive;
         font-size: 2em;
         text-align: $center;
-        color: $seventhClr;
+        color: map-get($color, seventhClr);
         font-weight: lighter;
         }
     }
