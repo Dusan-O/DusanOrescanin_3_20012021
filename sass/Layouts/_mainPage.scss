@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     width: auto;
-    background-color: $eleventhClr;
+    background-color: map-get($color, eleventhClr);
     padding: map-get($padding, padding20px);
     &__restaurants
     {
@@ -48,7 +48,7 @@
             &--txt{
                 width: 100%;
                 height: 100px;
-                background: $tenthClr;
+                background: map-get($color, tenthClr);
                 p{
                     padding-left: map-get($padding, padding10px);
                     font-size: map-get($font-size, font-size1);
@@ -71,7 +71,7 @@
                     }
                     &:hover::before{
                         cursor: pointer;
-                        color: $secndClr;
+                        color: map-get($color, secndClr);
                     }
                     }
                 }
@@ -113,7 +113,7 @@
         flex-direction: column;
         position: map-get($position, relative);;
         bottom: 0px;
-        background-color: $eleventhClr;
+        background-color: map-get($color, eleventhClr);
         @media (max-width: 768px){
             width: 100%;
             margin: 0;
@@ -140,7 +140,7 @@
                 }
                 &:hover::before{
                     cursor: pointer;
-                    color: $secndClr;
+                    color: map-get($color, secndClr);
                 }
                 }
             }
