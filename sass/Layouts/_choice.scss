@@ -1,5 +1,5 @@
 .choice{
-    background-color: $eleventhClr;
+    background-color: map-get($color, eleventhClr);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -62,12 +62,12 @@
         }
         label{
             transition:0.2s;
-            background: $tenthClr; 
+            background: map-get($color, tenthClr); 
             border-radius: 10px;
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
         }
         :hover + label {
-            background:$tenthClr;    
+            background:map-get($color, tenthClr);    
         }
         .barre-menu2 {
             display: flex;
