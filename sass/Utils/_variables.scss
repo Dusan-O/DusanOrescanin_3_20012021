@@ -1,14 +1,16 @@
-$primClr: #9356DC;
-$secndClr: #FF79DA;
-$tertClr: #99E2D0;
-$quartClr: #f3f3f3;
-$quintClr: #b8aeae;
-$sixtClr: #f5edff;
-$seventhClr: #353535;
-$eightClr: #eaeaea;
-$ninthClr: #de6eda;
-$tenthClr: #fff;
-$eleventhClr: #f6f6f6;
+$color: (
+primClr: #9356DC,
+secndClr: #FF79DA,
+tertClr: #99E2D0,
+quartClr: #f3f3f3,
+quintClr: #b8aeae,
+sixtClr: #f5edff,
+seventhClr: #353535,
+eightClr: #eaeaea,
+ninthClr: #de6eda,
+tenthClr: #fff,
+eleventhClr: #f6f6f6,
+)
 
 $borderRad: 30px;
 $borderRadius: 10px;
@@ -18,7 +20,7 @@ $shadow: (
     hover: 5px 7px 6px #737373,
     hover_1: 5px 7px 6px $seventhClr,
 );
-
+// create mixins for $color
 $padding: (
     padding: 10px 20px,
     padding5px: 5px,
