@@ -4,8 +4,8 @@
     input{
             border-radius: $borderRad;
             padding: map-get($padding, padding15px);
-            background: linear-gradient( to top, $primClr, $secndClr);
-            color: $tenthClr;
+            background: linear-gradient( to top, primClr, secndClr);
+            color: map-get($color, tenthClr);
             box-shadow: map-get($shadow, hover);
             font-size: map-get($font-size, font-size3);
             padding: map-get($padding, padding);
@@ -26,7 +26,7 @@
                 right: 0;
                 bottom: 0;
                 left: 0;
-                background: linear-gradient( to top, $primClr-hover, $secndClr-hover);
+                background: linear-gradient( to top, primClr-hover, secndClr-hover);
                 opacity: 0; 
                 z-index: -1;
                 transition: opacity 500ms;
