@@ -10,17 +10,17 @@ eightClr: #eaeaea,
 ninthClr: #de6eda,
 tenthClr: #fff,
 eleventhClr: #f6f6f6,
-)
+);
 
-$borderRad: 30px;
-$borderRadius: 10px;
 $border: 1px solid black;
+
 $imgRestaurant: (width: 100px, height: 50px);
+
 $shadow: (
     hover: 5px 7px 6px #737373,
-    hover_1: 5px 7px 6px $seventhClr,
+    hover_1: 5px 7px 6px #353535,
 );
-// create mixins for $color
+
 $padding: (
     padding: 10px 20px,
     padding5px: 5px,
