@@ -27,7 +27,7 @@
         &__imgCard {
             width: 700px;
             height: 300px;
-            border-radius: $borderRadius;
+            border-radius: 10px;
             overflow: hidden;
             margin-bottom: 30px;
             margin: map-get($margin, margin40px);
