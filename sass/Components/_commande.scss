@@ -2,7 +2,7 @@
     padding: map-get($padding, padding20px);
     text-align: $center;
     input{
-            border-radius: $borderRad;
+            border-radius: 30px;
             padding: map-get($padding, padding15px);
             background: linear-gradient( to top, primClr, secndClr);
             color: map-get($color, tenthClr);
@@ -18,8 +18,6 @@
                 }
             }
             &::after {
-                $primClr-hover: lighten($primClr, 3%);
-                $secndClr-hover: lighten($secndClr, 3%);
                 content: "";
                 position: map-get($position, absolute);
                 top: 0;
