@@ -41,13 +41,13 @@
             text-align: $center;
             line-height: 2em;
             border-radius: 0 10px 10px 0;
-            color: $tenthClr;
+            color: map-get($color, tenthClr);
             right: -5em;
             transition: 0.5s;
             .far{
                 vertical-align: sub;
                 font-size: map-get($font-size, font-size1);
-                color: $tenthClr;
+                color: map-get($color, tenthClr);
             }
             }
         :hover > .rotation { 
