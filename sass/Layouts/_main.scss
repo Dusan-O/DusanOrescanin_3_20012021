@@ -30,7 +30,7 @@
         &__boutton{
             padding: map-get($padding, padding20px);
             input{
-                border-radius: $borderRad;
+                border-radius: 10px;
                 padding: map-get($padding, Padding);
                 background: linear-gradient( to top, primClr, secndClr);
                 color: map-get($color, tenthClr);
@@ -43,10 +43,8 @@
                     &::after {
                         opacity: 1;
                     }
-                }
+                } 
                 &::after {
-                    $primClr-hover: lighten(primClr, 3%);
-                    $secndClr-hover: lighten(secndClr, 3%);
                     content: "";
                     position: map-get($position, absolute);
                     top: 0;
@@ -95,7 +93,7 @@
                 padding: 20px 180px 20px 20px;
                 margin: 3% 0;
                 font-size: 1em;
-                box-shadow: 5px 5px 5px 0px $eightClr;
+                box-shadow: 5px 5px 5px 0px #eaeaea;
                 background-color: map-get($color, eleventh);
                 @media (max-width: 533px){
                     font-size: map-get($font-size, font-size08);
